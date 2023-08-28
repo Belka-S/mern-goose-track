@@ -15,7 +15,7 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <BrowserRouter basename="/project-mern-schedule-01/">
+      <BrowserRouter basename="/mern-goose-track">
         <ThemeContextProvider>
           <App />
         </ThemeContextProvider>
