@@ -1,4 +1,4 @@
-import routes from 'src/routes';
+import routes from 'src/components/routes';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 

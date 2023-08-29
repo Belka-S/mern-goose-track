@@ -5,7 +5,7 @@ import { BsBarChart } from 'react-icons/bs';
 import UserCheck from 'src/components/shared/Icons/UserCheck';
 import CalendarCheck from 'src/components/shared/Icons/CalendarCheck';
 import getCurrentDate from 'src/utils/currentDate';
-import routes from 'src/routes.js';
+import routes from 'src/components/routes.js';
 
 import { NavUl, NavLinkStyled, IconDiv } from './UserNav.styled';
 

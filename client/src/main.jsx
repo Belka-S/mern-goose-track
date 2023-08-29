@@ -9,7 +9,7 @@ import ThemeContextProvider from './components/MainLayout/ThemeToggler/ThemeCont
 import { store, persistor } from './redux/store';
 import './utils/internationalization/i18next';
 
-import App from './App.jsx';
+import App from './components/App.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
