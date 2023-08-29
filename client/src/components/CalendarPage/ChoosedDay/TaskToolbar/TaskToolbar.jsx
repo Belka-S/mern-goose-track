@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { Popover } from 'react-tiny-popover';
 
-import { useDeleteTasksMutation, useUpdateTasksMutation } from 'src/redux/tasks/tasksApi';
+import { useDeleteTasksMutation, useUpdateTasksMutation } from 'store/tasks/tasksApi';
 
-import { ArrowCircleBrokenRight, Pencil, Trash } from 'src/components/shared/Icons';
+import { ArrowCircleBrokenRight, Pencil, Trash } from 'components/shared/Icons';
 
 import {
   TaskToolbarStyles,

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { addDays, format, getDate, getMonth, getYear, subDays } from 'date-fns';
-import { useGetTasksQuery } from 'src/redux/tasks/tasksApi';
+import { useGetTasksQuery } from 'store/tasks/tasksApi';
 import { useTranslation } from 'react-i18next';
 
 import Loader from '../shared/Loader/Loader';

@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Formik } from 'formik';
 import PropTypes from 'prop-types';
-import icon from 'src/images/svg/login.svg';
-import iconError from 'src/images/svg/validation-error.svg';
-import iconSuccess from 'src/images/svg/validation-success.svg';
-import eyeOn from 'src/images/svg/eye-show.svg';
-import eyeOff from 'src/images/svg/eye-off.svg';
-import AuthGoogleBtn from 'src/components/shared/AuthGoogle/AuthGoogleBtn/AuthGoogleBtn';
+import icon from 'images/svg/login.svg';
+import iconError from 'images/svg/validation-error.svg';
+import iconSuccess from 'images/svg/validation-success.svg';
+import eyeOn from 'images/svg/eye-show.svg';
+import eyeOff from 'images/svg/eye-off.svg';
+import AuthGoogleBtn from 'components/shared/AuthGoogle/AuthGoogleBtn/AuthGoogleBtn';
 
 import { validationRegisterRules } from '../validationRules';
 

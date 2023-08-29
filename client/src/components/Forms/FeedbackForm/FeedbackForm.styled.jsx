@@ -1,6 +1,6 @@
-import { backgroundColor, colorText } from 'src/styles/variables/Variables';
+import { backgroundColor, colorText } from 'styles/variables/Variables';
 import styled from 'styled-components';
-import { XClose, Pencil, Trash, RatingStar } from 'src/components/shared/Icons';
+import { XClose, Pencil, Trash, RatingStar } from 'components/shared/Icons';
 import { Field, ErrorMessage as FormikErrorMessage } from 'formik';
 
 export const FeedbackFormStyles = styled.div`

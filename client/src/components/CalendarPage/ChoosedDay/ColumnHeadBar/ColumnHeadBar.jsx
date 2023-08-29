@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-import { Add } from 'src/components/shared/Icons';
+import { Add } from 'components/shared/Icons';
 
 import { ColumnHeadBarStyles, TodoTitle, AddBtn } from './ColumnHeadBar.styled';
 

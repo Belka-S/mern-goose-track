@@ -1,7 +1,7 @@
-import oldPaper from 'src/images/others/old-paper-texture.jpg';
-import reallyOldPaper from 'src/images/others/really-old-paper-texture.jpg';
-import oldBlackPaper from 'src/images/others/old-black-paper-texture.jpg';
-import reallyOldBlackPaper from 'src/images/others/really-old-black-paper-texture.jpg';
+import oldPaper from 'images/others/old-paper-texture.jpg';
+import reallyOldPaper from 'images/others/really-old-paper-texture.jpg';
+import oldBlackPaper from 'images/others/old-black-paper-texture.jpg';
+import reallyOldBlackPaper from 'images/others/really-old-black-paper-texture.jpg';
 
 export const themes = Object.freeze({
   colors: {

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { backgroundColor, colorText } from 'src/styles/variables/Variables';
+import { backgroundColor, colorText } from 'styles/variables/Variables';
 
 export const ErrorPageStyles = styled.div`
   height: 100vh;

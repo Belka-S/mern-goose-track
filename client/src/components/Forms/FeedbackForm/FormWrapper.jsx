@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import Loader from 'src/components/shared/Loader/Loader';
-import { useGetReviewOwnQuery } from 'src/redux/reviews/reviewsApi';
+import Loader from 'components/shared/Loader/Loader';
+import { useGetReviewOwnQuery } from 'store/reviews/reviewsApi';
 
 import FeedbackForm from './FeedbackForm';
 export default function FormWrapper({ onClose }) {

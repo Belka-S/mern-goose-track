@@ -1,16 +1,16 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { userlogin, verify } from 'src/redux/auth/authOps';
-import { useisLoading, useError } from 'src/redux/selectors';
-import LoginForm from 'src/components/Forms/AuthForms/LoginForm/LoginForm';
-import VerifyForm from 'src/components/Forms/AuthForms/VerifyForm/VerifyForm';
-import AuthNavigate from 'src/components/shared/AuthNavigate/AuthNavigate';
-import Modal from 'src/components/shared/Modal/Modal';
-import Loader from 'src/components/shared/Loader/Loader';
-import { modalBackdropcolors } from 'src/styles/variables/themes';
-import logo from 'src/images/others/desktop/rocket1x.png';
-import logo2x from 'src/images/others/desktop/rocket2x.png';
-import logo3x from 'src/images/others/desktop/rocket3x.png';
+import { userlogin, verify } from 'store/auth/authOps';
+import { useisLoading, useError } from 'store/selectors';
+import LoginForm from 'components/Forms/AuthForms/LoginForm/LoginForm';
+import VerifyForm from 'components/Forms/AuthForms/VerifyForm/VerifyForm';
+import AuthNavigate from 'components/shared/AuthNavigate/AuthNavigate';
+import Modal from 'components/shared/Modal/Modal';
+import Loader from 'components/shared/Loader/Loader';
+import { modalBackdropcolors } from 'styles/variables/themes';
+import logo from 'images/others/desktop/rocket1x.png';
+import logo2x from 'images/others/desktop/rocket2x.png';
+import logo3x from 'images/others/desktop/rocket3x.png';
 
 import { Container, ContentWrap, Wrap, StyledImg } from './LoginPage.styled';
 

@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { store } from 'src/redux/store';
+import { store } from 'store/store';
 
-import { authenticate } from '../redux/auth/authOps';
+import { authenticate } from 'store/auth/authOps';
 
 axios.defaults.baseURL = 'https://project-mern-schedule-03.onrender.com/api';
 // axios.defaults.baseURL = 'http://localhost:3001/api';

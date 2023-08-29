@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 
 export const Container = styled.div`
   height: 100vh;

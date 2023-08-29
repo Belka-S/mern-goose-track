@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { backgroundColor, colorText } from 'src/styles/variables/Variables';
-import { Check } from 'src/components/shared/Icons';
+import { backgroundColor, colorText } from 'styles/variables/Variables';
+import { Check } from 'components/shared/Icons';
 
 export const DayCalendarHeadStyles = styled.ul`
   padding: 14px 18px;

@@ -5,7 +5,7 @@ import { format } from 'date-fns';
 
 import { useTranslation } from 'react-i18next';
 
-import { useUser } from 'src/redux/selectors';
+import { useUser } from 'store/selectors';
 
 import UniversalInput from '../../UniversalInput/UniversalInput';
 import AccountAvatar from '../AccountAvatar/AccountAvatar';

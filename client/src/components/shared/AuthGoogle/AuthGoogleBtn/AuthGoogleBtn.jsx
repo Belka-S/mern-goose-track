@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-import SvgGoogle from 'src/components/shared/Icons/Google';
+import SvgGoogle from 'components/shared/Icons/Google';
 
 import { LinkBtn } from './AuthGoogleBtn.styled';
 

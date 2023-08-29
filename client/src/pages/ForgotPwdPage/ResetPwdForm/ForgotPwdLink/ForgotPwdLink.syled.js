@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 
 export const RouteLink = styled(Link)`
   text-decoration: underline;

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useError, useisLoading } from 'src/redux/selectors';
+import { useError, useisLoading } from 'store/selectors';
 
-import Modal from 'src/components/shared/Modal/Modal';
+import Modal from 'components/shared/Modal/Modal';
 
 import ChangeEmailForm from '../Forms/AccountForm/ChangeEmailForm/ChangeEmailForm';
 import ChangeEmailVerifyForm from '../Forms/AccountForm/ChangeEmailVerifyForm/ChangeEmailVerifyForm';

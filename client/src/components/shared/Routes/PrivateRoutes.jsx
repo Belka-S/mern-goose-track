@@ -1,8 +1,8 @@
 import { Outlet, Navigate } from 'react-router-dom';
 
-import { useToken } from 'src/redux/selectors';
+import { useToken } from 'store/selectors';
 
-import routes from 'src/components/routes.js';
+import routes from 'components/routes.js';
 export default function PrivateRoutes() {
   const token = useToken();
   return token ? <Outlet /> : <Navigate to={routes.mainPage} />;

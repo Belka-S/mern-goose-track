@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import Modal from 'src/components/shared/Modal/Modal';
+import Modal from 'components/shared/Modal/Modal';
 
 import DeleteProfileForm from '../Forms/AccountForm/DeleteProfileForm/DeleteProfileForm';
 

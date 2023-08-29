@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import Modal from 'src/components/shared/Modal/Modal';
-import FeedbackForm from 'src/components/Forms/FeedbackForm/FeedbackForm';
-import FormWrapper from 'src/components/Forms/FeedbackForm/FormWrapper';
-import { modalBackdropcolors } from 'src/styles/variables/themes';
-import LangToggler from 'src/components/shared/LangToggler/LangToggler';
+import Modal from 'components/shared/Modal/Modal';
+import FeedbackForm from 'components/Forms/FeedbackForm/FeedbackForm';
+import FormWrapper from 'components/Forms/FeedbackForm/FormWrapper';
+import { modalBackdropcolors } from 'styles/variables/themes';
+import LangToggler from 'components/shared/LangToggler/LangToggler';
 
-import goose1x from 'src/images/others/desktop/goose-calendar1x.png';
-import goose2x from 'src/images/others/desktop/goose-calendar2x.png';
-import goose3x from 'src/images/others/desktop/goose-calendar3x.png';
+import goose1x from 'images/others/desktop/goose-calendar1x.png';
+import goose2x from 'images/others/desktop/goose-calendar2x.png';
+import goose3x from 'images/others/desktop/goose-calendar3x.png';
 
 import AddFeedbackBtn from '../AddFeedbackBtn/AddFeedbackBtn';
 import ThemeToggler from '../ThemeToggler/ThemeToggler';

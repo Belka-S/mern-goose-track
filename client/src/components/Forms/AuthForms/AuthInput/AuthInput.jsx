@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
-import iconError from 'src/images/svg/validation-error.svg';
-import iconSuccess from 'src/images/svg/validation-success.svg';
+import iconError from 'images/svg/validation-error.svg';
+import iconSuccess from 'images/svg/validation-success.svg';
 
 import ShowPasswordBtn from '../ShowPasswordBtn/ShowPasswordBtn';
 import ForgotPwdLink from '../ForgotPwdForm/ForgotPwdLink/ForgotPwdLink';

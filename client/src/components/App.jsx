@@ -1,32 +1,32 @@
 import { Suspense, Lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
-import { useError } from 'src/redux/selectors';
+import { useError } from 'store/selectors';
 import { ThemeProvider } from 'styled-components';
 
-import { useThemeColors } from 'src/components/MainLayout/ThemeToggler/ThemeContextProvider';
+import { useThemeColors } from 'components/MainLayout/ThemeToggler/ThemeContextProvider';
 
-import PrivateRoutes from 'src/components/shared/Routes/PrivateRoutes';
-import PubliceRourtes from 'src/components/shared/Routes/PubliceRoutes';
-import MainLayout from 'src/components/MainLayout/MainLayout';
-import AccountPage from 'src/components/AccountPage/AccountPage';
-import CalendarPage from 'src/components/CalendarPage/CalendarPage';
-import ChoosedMonth from 'src/components/CalendarPage/ChoosedMonth/ChoosedMonth';
-import ChoosedDay from 'src/components/CalendarPage/ChoosedDay/ChoosedDay';
-import StatisticsPage from 'src/components/StatisticsPage/StatisticsPage';
-import Loader from 'src/components/shared/Loader/Loader';
-import MainPage from 'src/pages/MainPage';
-import ErrorPage from 'src/pages/ErrorPage/ErrorPage';
-import LoginPage from 'src/pages/LoginPage/LoginPage';
-import ForgotPwdPage from 'src/pages/ForgotPwdPage/ForgotPwdPage';
-import ResetPwdPage from 'src/pages/ResetPwdPage/ResetPwdPage';
-import AuthGoogle from 'src/components/shared/AuthGoogle/AuthGoogle';
+import PrivateRoutes from 'components/shared/Routes/PrivateRoutes';
+import PubliceRourtes from 'components/shared/Routes/PubliceRoutes';
+import MainLayout from 'components/MainLayout/MainLayout';
+import AccountPage from 'components/AccountPage/AccountPage';
+import CalendarPage from 'components/CalendarPage/CalendarPage';
+import ChoosedMonth from 'components/CalendarPage/ChoosedMonth/ChoosedMonth';
+import ChoosedDay from 'components/CalendarPage/ChoosedDay/ChoosedDay';
+import StatisticsPage from 'components/StatisticsPage/StatisticsPage';
+import Loader from 'components/shared/Loader/Loader';
+import MainPage from 'pages/MainPage';
+import ErrorPage from 'pages/ErrorPage/ErrorPage';
+import LoginPage from 'pages/LoginPage/LoginPage';
+import ForgotPwdPage from 'pages/ForgotPwdPage/ForgotPwdPage';
+import ResetPwdPage from 'pages/ResetPwdPage/ResetPwdPage';
+import AuthGoogle from 'components/shared/AuthGoogle/AuthGoogle';
 
-import RegisterPage from 'src/pages/RegisterPage/RegisterPage';
-// import { DivWrapperAPP, DivColorWrapperAPP } from 'src/App.styled';
+import RegisterPage from 'pages/RegisterPage/RegisterPage';
+// import { DivWrapperAPP, DivColorWrapperAPP } from 'App.styled';
 
-import routes from 'src/components/routes.js';
-import { GlobalStyle } from 'src/styles/Basic/globalStyles.styled';
+import routes from 'components/routes.js';
+import { GlobalStyle } from 'styles/Basic/globalStyles.styled';
 
 // const MainLayout = lazy(() => import('./components/MainLayout/MainLayout'));
 // const AccountPage = lazy(() => import('./components/AccountPage/AccountPage'));

@@ -1,8 +1,8 @@
 import { Outlet, Navigate } from 'react-router-dom';
-import getCurrentDate from 'src/utils/currentDate';
+import getCurrentDate from 'utils/currentDate';
 
-import { useToken } from 'src/redux/selectors';
-import routes from 'src/components/routes.js';
+import { useToken } from 'store/selectors';
+import routes from 'components/routes.js';
 
 export default function PubliceRoutes() {
   const token = useToken();

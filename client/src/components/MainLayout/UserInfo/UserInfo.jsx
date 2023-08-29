@@ -1,4 +1,4 @@
-import { useUser } from 'src/redux/selectors';
+import { useUser } from 'store/selectors';
 import Avatar from '@mui/material/Avatar';
 
 import { UserInfoStyles, UserName } from './UserInfo.styled';

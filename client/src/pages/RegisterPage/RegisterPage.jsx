@@ -1,17 +1,17 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { useisLoading, useError } from 'src/redux/selectors';
-import logo from 'src/images/others/desktop/goose-quote1x.png';
-import logo2x from 'src/images/others/desktop/goose-quote2x.png';
-import logo3x from 'src/images/others/desktop/goose-quote3x.png';
+import { useisLoading, useError } from 'store/selectors';
+import logo from 'images/others/desktop/goose-quote1x.png';
+import logo2x from 'images/others/desktop/goose-quote2x.png';
+import logo3x from 'images/others/desktop/goose-quote3x.png';
 
-import { register, verify } from 'src/redux/auth/authOps';
-import RegisterForm from 'src/components/Forms/AuthForms/RegisterForm/RegisterForm';
-import VerifyForm from 'src/components/Forms/AuthForms/VerifyForm/VerifyForm';
-import AuthNavigate from 'src/components/shared/AuthNavigate/AuthNavigate';
-import Modal from 'src/components/shared/Modal/Modal';
-import Loader from 'src/components/shared/Loader/Loader';
-import { modalBackdropcolors } from 'src/styles/variables/themes';
+import { register, verify } from 'store/auth/authOps';
+import RegisterForm from 'components/Forms/AuthForms/RegisterForm/RegisterForm';
+import VerifyForm from 'components/Forms/AuthForms/VerifyForm/VerifyForm';
+import AuthNavigate from 'components/shared/AuthNavigate/AuthNavigate';
+import Modal from 'components/shared/Modal/Modal';
+import Loader from 'components/shared/Loader/Loader';
+import { modalBackdropcolors } from 'styles/variables/themes';
 
 import { Container, ContentWrap, Wrap, StyledImg } from './RegisterPage.styled';
 

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-import { Plus } from 'src/components/shared/Icons';
+import { Plus } from 'components/shared/Icons';
 
 import { AddTaskBtnStyles } from './AddTaskBtn.styled';
 

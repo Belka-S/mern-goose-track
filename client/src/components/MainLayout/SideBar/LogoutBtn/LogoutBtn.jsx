@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 
-import { logOut } from 'src/redux/auth/authOps';
-import Logout from 'src/components/shared/Icons/Logout';
+import { logOut } from 'store/auth/authOps';
+import Logout from 'components/shared/Icons/Logout';
 
 import { LogOutBtn, IconDiv } from './LogoutBtn.styled';
 

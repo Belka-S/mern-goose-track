@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Formik } from 'formik';
 import PropTypes from 'prop-types';
-import icon from 'src/images/svg/login.svg';
-import AuthGoogleBtn from 'src/components/shared/AuthGoogle/AuthGoogleBtn/AuthGoogleBtn';
+import icon from 'images/svg/login.svg';
+import AuthGoogleBtn from 'components/shared/AuthGoogle/AuthGoogleBtn/AuthGoogleBtn';
 
 import { validationRegisterRules } from '../validationRules';
 import AuthInput from '../AuthInput/AuthInput';

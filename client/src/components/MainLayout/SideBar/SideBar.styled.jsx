@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { modalBackdropcolors, themes } from 'src/styles/variables/themes';
+import { modalBackdropcolors, themes } from 'styles/variables/themes';
 
 export const SidebarBackdrop = styled.div`
   position: fixed;

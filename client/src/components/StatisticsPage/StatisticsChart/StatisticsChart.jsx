@@ -11,7 +11,7 @@ import {
 } from 'recharts';
 import { useTranslation } from 'react-i18next';
 
-import { useThemeColors } from 'src/components/MainLayout/ThemeToggler/ThemeContextProvider';
+import { useThemeColors } from 'components/MainLayout/ThemeToggler/ThemeContextProvider';
 
 import { StatisticsChartStyles, ChartContainer, TasksLabel } from './StatisticsChart.styled';
 

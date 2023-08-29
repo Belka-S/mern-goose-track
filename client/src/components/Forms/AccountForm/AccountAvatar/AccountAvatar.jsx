@@ -2,8 +2,8 @@ import { useRef } from 'react';
 import PropTypes from 'prop-types';
 import Avatar from '@mui/material/Avatar';
 import { useTranslation } from 'react-i18next';
-import { useUser } from 'src/redux/selectors';
-import { Plus } from 'src/components/shared/Icons';
+import { useUser } from 'store/selectors';
+import { Plus } from 'components/shared/Icons';
 
 import { SUPPORTED_FORMATS } from '../accountValidationRules';
 

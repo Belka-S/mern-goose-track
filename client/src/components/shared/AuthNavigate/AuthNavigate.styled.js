@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 
 export const NavigateLink = styled(NavLink)`
   color: ${themes.colors.accent};

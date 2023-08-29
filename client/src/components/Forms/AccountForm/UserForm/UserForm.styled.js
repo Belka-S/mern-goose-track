@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import 'react-datepicker/dist/react-datepicker.css';
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 
 export const FormWrap = styled.div`
   display: flex;

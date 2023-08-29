@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useSearchParams } from 'react-router-dom/dist';
 
-import { authenticate } from 'src/redux/auth/authOps';
+import { authenticate } from 'store/auth/authOps';
 
 const AuthGoogle = () => {
   const [searchParams] = useSearchParams();

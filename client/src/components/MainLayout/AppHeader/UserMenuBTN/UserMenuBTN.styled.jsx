@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 
 export const UserMenuBTNOpen = styled.button`
   /* @media screen and (width <= ${themes.breakpoints.s}) { */
-    display: block;
-    min-width: 24px;
-    min-height: 24px;
+  display: block;
+  min-width: 24px;
+  min-height: 24px;
   /* } */
   @media screen and (width >= ${themes.breakpoints.m}) {
     width: 34px;
