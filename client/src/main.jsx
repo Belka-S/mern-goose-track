@@ -12,9 +12,6 @@ import './utils/internationalization/i18next';
 import App from './components/App.jsx';
 import './index.css';
 
-console.log(persistor);
-console.log('store: ', store);
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>

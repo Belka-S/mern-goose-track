@@ -9,8 +9,8 @@ const { ACCESS_SECRET_KEY } = process.env;
 
 const resetPassword = ctrlWrapper(async (req, res) => {
   const { newPassword, confirmPassword, id, pwdToken } = req.body;
-  console.log('confirmPassword: ', confirmPassword);
-  console.log('newPassword: ', newPassword);
+  // console.log('confirmPassword: ', confirmPassword);
+  // console.log('newPassword: ', newPassword);
 
   const user = await User.findOne({ _id: id });
   if (!user) throw HttpError(422);

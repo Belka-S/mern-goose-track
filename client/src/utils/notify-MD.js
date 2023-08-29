@@ -21,7 +21,7 @@ const regExp = {
 };
 
 export const ErrorLogger = (_api) => (next) => (action) => {
-  console.log('actio: ', action);
+  // console.log('actio: ', action);
 
   if (action.type === regExp.userRegFF) {
     toast.success(i18n.t('Verification letter was send to you email address'));
