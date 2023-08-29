@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { useDispatch } from 'react-redux';
 
-import { verify } from 'src/redux/auth/authOps';
+import { verify } from 'store/auth/authOps';
 
 import UniversalInput from '../../UniversalInput/UniversalInput';
 

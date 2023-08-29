@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { updUser, changeEM, changePW, delUser } from 'src/redux/auth/authOps';
+import { updUser, changeEM, changePW, delUser } from 'store/auth/authOps';
 
 import UserForm from '../Forms/AccountForm/UserForm/UserForm';
 

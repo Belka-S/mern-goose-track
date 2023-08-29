@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-import eyeOn from 'src/images/svg/eye-show.svg';
-import eyeOff from 'src/images/svg/eye-off.svg';
+import eyeOn from 'images/svg/eye-show.svg';
+import eyeOff from 'images/svg/eye-off.svg';
 
 import { SvgEye } from './ShowPasswordBtn.styled';
 

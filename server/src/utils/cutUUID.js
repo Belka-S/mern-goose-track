@@ -4,7 +4,6 @@ const cutUUID = code => {
   const min = 1;
 
   const randomIndex = Math.floor(Math.random() * (max - min) + min);
-  console.log('randomIndex: ', randomIndex);
 
   return codeArr[randomIndex];
 };

@@ -9,11 +9,11 @@ const { ACCESS_SECRET_KEY, REFRESH_SECRET_KEY } = process.env;
 const login = ctrlWrapper(async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email });
-  console.log('user: ', user);
+  // console.log('user: ', user);
   if (!user) throw HttpError(422);
   if (!user.verifiedEmail) {
     const msg = createMsg.verifyEmail(email, user.verificationCode);
-    console.log('email sent');
+    // console.log('email sent');
     await sendEmail.nodemailer(msg);
     throw HttpError(401, 'Action Required: Verify Your Email');
   }

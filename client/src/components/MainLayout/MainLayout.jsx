@@ -1,13 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { modalBackdropcolors } from 'src/styles/variables/themes';
-import Loader from 'src/components/shared/Loader/Loader';
-import Modal from 'src/components/shared/Modal/Modal';
+import { modalBackdropcolors } from 'styles/variables/themes';
+import Loader from 'components/shared/Loader/Loader';
+import Modal from 'components/shared/Modal/Modal';
 
-import { useToken, useisLoading, useisRefreshing } from 'src/redux/selectors';
+import { useToken, useisLoading, useisRefreshing } from 'store/selectors';
 
-import { getCurrent } from 'src/redux/auth/authOps';
+import { getCurrent } from 'store/auth/authOps';
 
 import SideBar from './SideBar/SideBar';
 import AppHeader from './AppHeader/AppHeader';

@@ -13,7 +13,7 @@ import {
   changePassword,
   forgotPwd,
   resetPwd
-} from 'src/services/authAxApi';
+} from 'services/authAxApi';
 
 export const authenticate = createAsyncThunk('user/Auth', function (token, { rejectWithValue }) {
   try {

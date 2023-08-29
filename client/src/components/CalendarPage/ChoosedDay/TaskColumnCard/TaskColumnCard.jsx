@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { differenceInSeconds } from 'date-fns';
 
-import { useUser } from 'src/redux/selectors';
+import { useUser } from 'store/selectors';
 
 import { Avatar } from '../../../shared/Icons';
 

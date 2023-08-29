@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 import { NavLink } from 'react-router-dom';
 
 const getPriorityColor = (props) => {

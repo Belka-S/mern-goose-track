@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 
-import { device } from 'src/styles/variables/mediaVeriables';
+import { device } from 'styles/variables/mediaVeriables';
 
 export const StyledTogglerWrapper = styled.div`
   position: absolute;

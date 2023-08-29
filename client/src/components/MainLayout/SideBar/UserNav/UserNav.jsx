@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { BsBarChart } from 'react-icons/bs';
-import UserCheck from 'src/components/shared/Icons/UserCheck';
-import CalendarCheck from 'src/components/shared/Icons/CalendarCheck';
-import getCurrentDate from 'src/utils/currentDate';
-import routes from 'src/routes.js';
+import UserCheck from 'components/shared/Icons/UserCheck';
+import CalendarCheck from 'components/shared/Icons/CalendarCheck';
+import getCurrentDate from 'utils/currentDate';
+import routes from 'components/routes.js';
 
 import { NavUl, NavLinkStyled, IconDiv } from './UserNav.styled';
 

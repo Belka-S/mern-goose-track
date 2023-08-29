@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-import XClose from 'src/components/shared/Icons/XClose';
-import { changeEM } from 'src/redux/auth/authOps';
+import XClose from 'components/shared/Icons/XClose';
+import { changeEM } from 'store/auth/authOps';
 
 import UniversalInput from '../../UniversalInput/UniversalInput';
 

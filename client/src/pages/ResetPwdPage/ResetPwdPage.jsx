@@ -1,15 +1,15 @@
 import { useDispatch } from 'react-redux';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { reset } from 'src/redux/auth/authOps';
-import { useisLoading } from 'src/redux/selectors';
-import ResetPwdForm from 'src/components/Forms/AuthForms/ResetPwdForm/ResetPwdForm';
-import AuthNavigate from 'src/components/shared/AuthNavigate/AuthNavigate';
-import Modal from 'src/components/shared/Modal/Modal';
-import Loader from 'src/components/shared/Loader/Loader';
-import { modalBackdropcolors } from 'src/styles/variables/themes';
-import logo from 'src/images/others/desktop/rocket1x.png';
-import logo2x from 'src/images/others/desktop/rocket2x.png';
-import logo3x from 'src/images/others/desktop/rocket3x.png';
+import { reset } from 'store/auth/authOps';
+import { useisLoading } from 'store/selectors';
+import ResetPwdForm from 'components/Forms/AuthForms/ResetPwdForm/ResetPwdForm';
+import AuthNavigate from 'components/shared/AuthNavigate/AuthNavigate';
+import Modal from 'components/shared/Modal/Modal';
+import Loader from 'components/shared/Loader/Loader';
+import { modalBackdropcolors } from 'styles/variables/themes';
+import logo from 'images/others/desktop/rocket1x.png';
+import logo2x from 'images/others/desktop/rocket2x.png';
+import logo3x from 'images/others/desktop/rocket3x.png';
 
 import { Container, ContentWrap, Wrap, StyledImg } from './ResetPwdPage.styled';
 

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import iconError from 'src/images/svg/validation-error.svg';
-import iconSuccess from 'src/images/svg/validation-success.svg';
-import eyeOn from 'src/images/svg/eye-show.svg';
-import eyeOff from 'src/images/svg/eye-off.svg';
+import iconError from 'images/svg/validation-error.svg';
+import iconSuccess from 'images/svg/validation-success.svg';
+import eyeOn from 'images/svg/eye-show.svg';
+import eyeOff from 'images/svg/eye-off.svg';
 
 // import { validationRegisterRules } from '../validationRules';
 

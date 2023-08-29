@@ -1,4 +1,4 @@
-import { colorText } from 'src/styles/variables/Variables';
+import { colorText } from 'styles/variables/Variables';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 

@@ -8,10 +8,10 @@ import { useTranslation } from 'react-i18next';
 import { FaUser } from 'react-icons/fa';
 import { CgArrowLongLeft, CgArrowLongRight } from 'react-icons/cg';
 
-import { useGetReviewsQuery } from 'src/redux/reviews/reviewsApi';
-import Loader from 'src/components/shared/Loader/Loader';
+import { useGetReviewsQuery } from 'store/reviews/reviewsApi';
+import Loader from 'components/shared/Loader/Loader';
 
-import { RatingStar } from 'src/components/shared/Icons';
+import { RatingStar } from 'components/shared/Icons';
 
 import {
   UserPhoto,

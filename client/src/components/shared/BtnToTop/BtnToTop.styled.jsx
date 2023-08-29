@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 
 export const TopButton = styled.div`
   position: fixed;
@@ -39,21 +39,20 @@ export const TopButton = styled.div`
 
 export const ToTopBtn = styled(FaRegArrowAltCircleUp)`
   position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+  }
+  @media screen and (min-width: 1200px) {
     font-size: 40px;
-
-    @media screen and (max-width: 767px) {
-      font-size: 28px;
-    }
-    @media screen and (min-width: 768px) {
-      font-size: 35px;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 40px;
-    }
-
+  }
 `;

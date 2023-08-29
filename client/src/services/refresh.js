@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-import { store } from 'src/redux/store';
+import { store } from 'store/store';
 
-import { authenticate } from '../redux/auth/authOps';
+import { authenticate } from 'store/auth/authOps';
 
 export const token = {
   set(token) {

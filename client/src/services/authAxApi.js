@@ -1,13 +1,15 @@
 import axios from 'axios';
-import { store } from 'src/redux/store';
+import { store } from 'store/store';
+import { authenticate } from 'store/auth/authOps';
 
-import { authenticate } from '../redux/auth/authOps';
+const { DEV, VITE_BASE_URL_DEV, VITE_BASE_URL_PROD } = import.meta.env;
 
-axios.defaults.baseURL = 'https://project-mern-schedule-03.onrender.com/api';
+axios.defaults.baseURL = DEV ? VITE_BASE_URL_DEV : VITE_BASE_URL_PROD;
+// axios.defaults.baseURL = 'https://project-mern-schedule-03.onrender.com/api';
 // axios.defaults.baseURL = 'http://localhost:3001/api';
 export async function userRegister(userData) {
   const response = await axios.post('/users/register', userData);
-  console.log('response: ', response);
+  // console.log('response: ', response);
   return response.data;
 }
 export async function userLogin(loginData) {

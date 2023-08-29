@@ -1,9 +1,9 @@
 import { getYear, getMonth, parse } from 'date-fns';
 import { useParams } from 'react-router-dom';
-import { useGetTasksQuery } from 'src/redux/tasks/tasksApi';
-import Loader from 'src/components/shared/Loader/Loader';
+import { useGetTasksQuery } from 'store/tasks/tasksApi';
+import Loader from 'components/shared/Loader/Loader';
 
-import { useisRefreshing } from 'src/redux/selectors';
+import { useisRefreshing } from 'store/selectors';
 
 import TasksColumnsList from './TasksColumnsList/TasksColumnsList';
 import DayCalendarHead from './DayCalendarHead/DayCalendarHead';

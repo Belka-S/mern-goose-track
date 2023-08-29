@@ -9,7 +9,7 @@ import {
   useCreateReviewsMutation,
   useDeleteReviewsMutation,
   useUpdateReviewsMutation
-} from '../../../redux/reviews/reviewsApi';
+} from 'store/reviews/reviewsApi';
 
 import {
   FeedbackFormStyles,

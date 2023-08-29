@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { parse } from 'date-fns';
 
-import { useCreateTasksMutation, useUpdateTasksMutation } from 'src/redux/tasks/tasksApi';
+import { useCreateTasksMutation, useUpdateTasksMutation } from 'store/tasks/tasksApi';
 
 import {
   ButtonAction,

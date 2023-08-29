@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import Modal from 'src/components/shared/Modal/Modal';
+import Modal from 'components/shared/Modal/Modal';
 
 import ChangePasswordForm from '../Forms/AccountForm/ChangePasswordForm/ChangePasswordForm';
 

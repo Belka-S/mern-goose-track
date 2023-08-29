@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { themes } from 'src/styles/variables/themes';
+import { themes } from 'styles/variables/themes';
+
 export const DivColorWrapperAPP = styled.div`
   height: 100vh;
   width: 100vw;
