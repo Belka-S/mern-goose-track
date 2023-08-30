@@ -1,13 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const { DEV, VITE_BASE_URL_DEV, VITE_BASE_URL_PROD } = import.meta.env;
+const { DEV, VITE_BACK_URL_DEV, VITE_BACK_URL_PROD } = import.meta.env;
 
 export const reviewsApi = createApi({
   reducerPath: 'reviews',
   baseQuery: fetchBaseQuery({
-    // baseUrl: 'http://localhost:3001/api',
-    // baseUrl: 'https://project-mern-schedule-03.onrender.com/api',
-    baseURL: DEV ? VITE_BASE_URL_DEV : VITE_BASE_URL_PROD,
+    baseURL: DEV ? VITE_BACK_URL_DEV : VITE_BACK_URL_PROD,
     prepareHeaders: (headers, { getState }) => {
       const token = getState().user.token;
       if (token) {
@@ -19,21 +17,21 @@ export const reviewsApi = createApi({
   endpoints: (builder) => ({
     getReviews: builder.query({
       query: () => ({
-        url: '/reviews',
+        url: '/api/reviews',
         method: 'GET'
       }),
       providesTags: ['reviews']
     }),
     getReviewOwn: builder.query({
       query: () => ({
-        url: '/reviews/own',
+        url: '/api/reviews/own',
         method: 'GET'
       }),
       providesTags: ['reviews']
     }),
     createReviews: builder.mutation({
       query: (review) => ({
-        url: '/reviews/own',
+        url: '/api/reviews/own',
         method: 'POST',
         body: review
       }),
@@ -41,14 +39,14 @@ export const reviewsApi = createApi({
     }),
     deleteReviews: builder.mutation({
       query: (reviewID) => ({
-        url: '/reviews/own',
+        url: '/api/reviews/own',
         method: 'DELETE'
       }),
       invalidatesTags: ['reviews']
     }),
     updateReviews: builder.mutation({
       query: ({ id, ...rest }) => ({
-        url: '/reviews/own/',
+        url: '/api/reviews/own/',
         method: 'PATCH',
         body: { ...rest }
       }),
