@@ -6,12 +6,12 @@ const bcrypt = require('bcryptjs');
 const User = require('../models/user');
 const { sendEmail, createMsg } = require('../utils');
 
-const { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, BASE_URL } = process.env;
+const { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, BACK_URL } = process.env;
 
 const googleParams = {
   clientID: GOOGLE_CLIENT_ID,
   clientSecret: GOOGLE_CLIENT_SECRET,
-  callbackURL: `${BASE_URL}/api/users/google/callback`,
+  callbackURL: `${BACK_URL}/api/users/google/callback`,
   passReqToCallback: true,
 };
 

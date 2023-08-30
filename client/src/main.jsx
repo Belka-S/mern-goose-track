@@ -12,10 +12,12 @@ import './utils/internationalization/i18next';
 import App from './components/App.jsx';
 import './index.css';
 
+const { BASE_URL } = import.meta.env;
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <BrowserRouter basename="/mern-goose-track">
+      <BrowserRouter basename={BASE_URL}>
         <ThemeContextProvider>
           <App />
         </ThemeContextProvider>
