@@ -3,7 +3,9 @@ const jwt = require('jsonwebtoken');
 const User = require('../../models/user');
 const { ctrlWrapper } = require('../../decorators');
 const { HttpError, sendEmail, createMsg } = require('../../utils');
-const { FRONT_URL, ACCESS_SECRET_KEY } = process.env;
+
+const { ACCESS_SECRET_KEY, NODE_ENV, FRONT_URL_DEV, FRONT_URL_PROD } = process.env;
+const frontUrl = NODE_ENV === 'development' ? FRONT_URL_DEV : FRONT_URL_PROD;
 
 const forgotPassword = ctrlWrapper(async (req, res) => {
   const { email } = req.body;
@@ -15,7 +17,7 @@ const forgotPassword = ctrlWrapper(async (req, res) => {
   const secret = ACCESS_SECRET_KEY + user.password;
   const pwdToken = jwt.sign(payload, secret, { expiresIn: '5h' });
 
-  const link = `${FRONT_URL}/reset?id=${user._id}&pwd_token=${pwdToken}`;
+  const link = `${frontUrl}/reset?id=${user._id}&pwd_token=${pwdToken}`;
   const msg = createMsg.forgotPassword(email, link);
   await sendEmail.nodemailer(msg);
 
