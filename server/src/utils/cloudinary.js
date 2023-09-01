@@ -12,8 +12,8 @@ cloudinary.config({
 });
 
 const options = {
-  folder: 'Avatars',
-  use_filename: true,
+  folder: 'GooseTrack/Avatars',
+  use_filename: false,
   unique_filename: true,
   overwrite: true,
   transformation: [

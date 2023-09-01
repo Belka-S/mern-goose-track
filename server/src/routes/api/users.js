@@ -6,7 +6,6 @@ const { validateBody } = require('../../decorators');
 const { authenticate, passport, upload } = require('../../middlewares');
 
 const router = Router();
-const uploadAvatar = upload.single('avatar');
 
 router.get('/google', passport.authenticate('google', { scope: ['email', 'profile'] }));
 router.get(
@@ -26,7 +25,7 @@ router.post('/logout', authenticate, ctrl.logout);
 router.patch(
   '/profile',
   authenticate,
-  uploadAvatar,
+  upload.single('avatar'),
   validateBody(schemas.updateProfileShema),
   ctrl.updateProfile
 );
