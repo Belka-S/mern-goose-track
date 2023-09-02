@@ -7,12 +7,7 @@ import { Plus } from 'components/shared/Icons';
 
 import { SUPPORTED_FORMATS } from '../accountValidationRules';
 
-import {
-  AvatarAddIcon,
-  AvatarContainer,
-  AvatarInputField,
-  AvatarImg
-} from './AccountAvatar.styled';
+import { AvatarAddIcon, AvatarContainer, AvatarInputField, AvatarImg } from './UserAvatar.styled';
 
 export default function AccountAvatar({
   selectedAvatar,

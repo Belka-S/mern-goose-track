@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { useUser } from 'store/selectors';
 
 import UniversalInput from '../../UniversalInput/UniversalInput';
-import AccountAvatar from '../AccountAvatar/AccountAvatar';
+import AccountAvatar from '../UserAvatar/UserAvatar';
 
 import { validationAvatarRules, validationUserFormRules } from '../accountValidationRules';
 

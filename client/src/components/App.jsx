@@ -9,11 +9,11 @@ import { useThemeColors } from 'components/MainLayout/ThemeToggler/ThemeContextP
 import PrivateRoutes from 'components/shared/Routes/PrivateRoutes';
 import PubliceRourtes from 'components/shared/Routes/PubliceRoutes';
 import MainLayout from 'components/MainLayout/MainLayout';
-import AccountPage from 'components/AccountPage/AccountPage';
-import CalendarPage from 'components/CalendarPage/CalendarPage';
-import ChoosedMonth from 'components/CalendarPage/ChoosedMonth/ChoosedMonth';
-import ChoosedDay from 'components/CalendarPage/ChoosedDay/ChoosedDay';
-import StatisticsPage from 'components/StatisticsPage/StatisticsPage';
+import AccountPage from 'pages/ProfilePage/ProfilePage';
+import CalendarPage from 'pages/CalendarPage/CalendarPage';
+import ChoosedMonth from 'pages/CalendarPage/ChoosedMonth/ChoosedMonth';
+import ChoosedDay from 'pages/CalendarPage/ChoosedDay/ChoosedDay';
+import StatisticsPage from 'pages/StatisticsPage/StatisticsPage';
 import Loader from 'components/shared/Loader/Loader';
 import MainPage from 'pages/MainPage';
 import ErrorPage from 'pages/ErrorPage/ErrorPage';

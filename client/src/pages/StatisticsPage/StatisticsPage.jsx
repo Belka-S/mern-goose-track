@@ -3,8 +3,8 @@ import { addDays, format, getDate, getMonth, getYear, subDays } from 'date-fns';
 import { useGetTasksQuery } from 'store/tasks/tasksApi';
 import { useTranslation } from 'react-i18next';
 
-import Loader from '../shared/Loader/Loader';
-import PeriodPaginator from '../shared/PeriodPaginator/PeriodPaginator';
+import Loader from '../../components/shared/Loader/Loader';
+import PeriodPaginator from '../../components/shared/PeriodPaginator/PeriodPaginator';
 
 import StatisticsChart from './StatisticsChart/StatisticsChart';
 

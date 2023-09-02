@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Modal from 'components/shared/Modal/Modal';
 
-import ChangePasswordForm from '../Forms/AccountForm/ChangePasswordForm/ChangePasswordForm';
+import ChangePasswordForm from '../Forms/ProfileForm/ChangePasswordForm/ChangePasswordForm';
 
 import { UpdatePasswordBtn } from './ChangePasswordModal.styled';
 

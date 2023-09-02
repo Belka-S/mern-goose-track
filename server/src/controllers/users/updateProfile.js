@@ -4,7 +4,7 @@ const { cloudinary, HttpError, filterEmptyValue } = require('../../utils');
 
 const updateProfile = ctrlWrapper(async (req, res) => {
   const { name, birthday, phone, skype } = req.body;
-  const { _id } = req.user;
+  const { _id, email } = req.user;
   let avatarUrl = req.user.avatarUrl;
 
   // Update avatar
@@ -24,7 +24,9 @@ const updateProfile = ctrlWrapper(async (req, res) => {
   const newUser = await User.findByIdAndUpdate(_id, profileData, { new: true });
   if (!newUser) throw HttpError(500, 'Failed to update user profile.');
 
-  res.status(200).json({ message: 'Profile updated.', user: { _id, ...profileData, avatarUrl } });
+  res
+    .status(200)
+    .json({ message: 'Profile updated.', user: { _id, email, ...profileData, avatarUrl } });
 });
 
 module.exports = updateProfile;

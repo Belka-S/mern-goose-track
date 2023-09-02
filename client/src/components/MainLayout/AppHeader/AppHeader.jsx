@@ -38,7 +38,7 @@ export default function AppHeader({ callBack, isHomePage }) {
   const isCalendarDayPage = activePage === 'calendar' && location.pathname.includes('/day/');
 
   const headerTitle = {
-    account: t('User Profile'),
+    account: t('Profile'),
     statistics: t('Statistics'),
     calendar: t('Calendar')
   };

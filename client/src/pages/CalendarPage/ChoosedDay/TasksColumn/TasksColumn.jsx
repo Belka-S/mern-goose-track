@@ -9,7 +9,7 @@ import ColumnHeadBar from '../ColumnHeadBar/ColumnHeadBar';
 import ColumnTasksList from '../ColumnTasksList/ColumnTasksList';
 import AddTaskBtn from '../AddTaskBtn/AddTaskBtn';
 
-import { TaskForm } from '../../../Forms/TaskForm/TaskForm';
+import { TaskForm } from '../../../../components/Forms/TaskForm/TaskForm';
 
 import { TasksColumnStyles } from './TasksColumn.styled';
 

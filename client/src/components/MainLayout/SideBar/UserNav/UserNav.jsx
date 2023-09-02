@@ -25,7 +25,7 @@ export default function UserNav(callBackCls) {
           <IconDiv>
             <UserCheck />
           </IconDiv>
-          {t('My Account')}
+          {t('Profile')}
         </NavLinkStyled>
       </li>
       <li key="CalendarPage">

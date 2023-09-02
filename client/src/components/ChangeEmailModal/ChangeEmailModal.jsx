@@ -4,8 +4,8 @@ import { useError, useisLoading } from 'store/selectors';
 
 import Modal from 'components/shared/Modal/Modal';
 
-import ChangeEmailForm from '../Forms/AccountForm/ChangeEmailForm/ChangeEmailForm';
-import ChangeEmailVerifyForm from '../Forms/AccountForm/ChangeEmailVerifyForm/ChangeEmailVerifyForm';
+import ChangeEmailForm from '../Forms/ProfileForm/ChangeEmailForm/ChangeEmailForm';
+import ChangeEmailVerifyForm from '../Forms/ProfileForm/ChangeEmailVerifyForm/ChangeEmailVerifyForm';
 
 import { ChangeValueBtn } from './ChangeEmailModal.styled';
 

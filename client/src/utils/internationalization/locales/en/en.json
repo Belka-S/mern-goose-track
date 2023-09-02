@@ -50,11 +50,10 @@
   "Password Characters": "Password must be at least 6 characters",
   "Must Match": "Must Match",
 
-  "User Profile": "User Profile",
   "Feedback": "Feedback",
 
   "User Panel": "User Panel",
-  "My Account": "My Account",
+  "Profile": "Profile",
   "Calendar": "Calendar",
   "Statistics": "Statistics",
   "Log Out": "Log Out",

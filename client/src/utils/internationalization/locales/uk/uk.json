@@ -50,11 +50,10 @@
   "Password Characters": "Пароль повинен мати щонайменше 6 символів",
   "Must Match": "Паролі мають співпадати",
 
-  "User Profile": "Профіль Користувача",
   "Feedback": "Відгуки",
 
   "User Panel": "Панель користувача",
-  "My Account": "Мій Кабінет",
+  "Profile": "Профіль",
   "Calendar": "Календар",
   "Statistics": "Статистика",
   "Log Out": "Вийти",

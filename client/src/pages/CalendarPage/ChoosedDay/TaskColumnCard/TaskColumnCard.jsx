@@ -4,7 +4,7 @@ import { differenceInSeconds } from 'date-fns';
 
 import { useUser } from 'store/selectors';
 
-import { Avatar } from '../../../shared/Icons';
+import { Avatar } from '../../../../components/shared/Icons';
 
 import TaskToolbar from '../TaskToolbar/TaskToolbar';
 
