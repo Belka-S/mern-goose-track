@@ -33,7 +33,7 @@ export default function UserForm({ callBack }) {
     const formData = new FormData();
 
     Object.keys(data).forEach((key) => {
-      if (data.avatarUrl === '') data.avatarUrl = 'dummy';
+      if (!data.avatarUrl.includes('cloudinary')) data.avatarUrl = 'dummy';
 
       if (typeof data[key] === 'string') {
         formData.append(key, data[key].trim());

@@ -16,7 +16,7 @@ const loginSchema = Joi.object({
 const refreshSchema = Joi.object({ refreshToken: Joi.string().allow('').optional() }); // req.body do not attach refreshToken sometimes !!!
 
 const updateProfileShema = Joi.object({
-  name: Joi.string().alphanum().min(4).required(),
+  name: Joi.string().min(4).required(),
   birthday: Joi.string().allow(null).allow('').optional(),
   phone: Joi.string().allow(null).allow('').optional(),
   skype: Joi.string().allow(null).allow('').optional(),
