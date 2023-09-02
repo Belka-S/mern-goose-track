@@ -30,6 +30,7 @@ const userTokenExpired = (state, { payload }) => {
 const userLoginVerify = (state, { payload }) => {
   state.token = payload.token;
   state.refreshToken = payload.refreshToken;
+  if (payload.email) state.email = payload.email;
 };
 const userGetCurrent = (state, { payload }) => {
   state.email = payload.user.email;

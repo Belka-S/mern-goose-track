@@ -35,9 +35,12 @@ const verifyEmail = ctrlWrapper(async (req, res) => {
   );
   if (!newUser) throw HttpError(500, 'Failed to verify email.');
 
-  res
-    .status(200)
-    .json({ message: `Email ${newUser.email} verified successfully.`, token, refreshToken });
+  res.status(200).json({
+    message: `Email ${newUser.email} verified successfully.`,
+    token,
+    refreshToken,
+    email: newUser.email,
+  });
 });
 
 module.exports = verifyEmail;
