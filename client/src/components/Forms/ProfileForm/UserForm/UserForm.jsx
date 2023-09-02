@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Formik, Form } from 'formik';
 import { format } from 'date-fns';
@@ -17,6 +17,8 @@ import { FormWrap, UserNameTitle, RoleTitle, FormInputContainer, FormBtn } from 
 export default function UserForm({ callBack }) {
   const { t } = useTranslation();
   const user = useUser();
+
+  useEffect(() => {}, [user.email]);
 
   const initialValues = {
     avatarUrl: user.avatarUrl || '',
