@@ -8,33 +8,33 @@ export const FormWrap = styled.div`
   align-items: center;
 `;
 
-export const UserNameTitle = styled.h2`
+export const UserNameTitle = styled.h3`
   margin: 0;
   margin-bottom: 4px;
   color: ${({ theme }) => theme.colors.textCancelBtn};
 
   @media screen and (${themes.breakpoints.m} <= width) {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 `;
 
 export const RoleTitle = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  margin-bottom: 24px;
+  margin-bottom: 6px;
   color: ${({ theme }) => theme.colors.placeholder};
 
   @media screen and (${themes.breakpoints.m} <= width) {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.29;
     letter-spacing: -0.02em;
   }
 
   @media screen and (${themes.breakpoints.l} <= width) {
-    margin-bottom: 44px;
+    margin-bottom: 8px;
   }
 `;
 

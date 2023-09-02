@@ -22,7 +22,7 @@ export default function UserForm({ callBack }) {
     avatarUrl: user.avatarUrl || '',
     name: user.name,
     phone: user.phone || '',
-    birthday: user.birthday || new Date(),
+    birthday: user.birthday || '',
     skype: user.skype || ''
   };
 
@@ -31,20 +31,17 @@ export default function UserForm({ callBack }) {
 
   const onSubmit = (data) => {
     const formData = new FormData();
-    Object.entries(data).forEach(([key, value]) => {
-      if (value) {
-        if (value instanceof File) {
-          formData.append(key, value);
-        } else if (typeof value === 'string') {
-          formData.append(key, value.trim());
-        } else {
-          formData.append(key, value);
-        }
-      } else if (key === 'birthday') {
-        const birthday = format(new Date(value[key]), 'yyyy-MM-dd');
-        formData.append('birthday', birthday);
+
+    Object.keys(data).forEach((key) => {
+      if (data.avatarUrl === '') data.avatarUrl = 'dummy';
+
+      if (typeof data[key] === 'string') {
+        formData.append(key, data[key].trim());
+      } else {
+        formData.append(key, data[key]);
       }
     });
+
     callBack(formData);
   };
 
@@ -66,8 +63,8 @@ export default function UserForm({ callBack }) {
                   setSelectedAvatar={setSelectedAvatar}
                   setImagePreview={setImagePreview}
                 />
-                <UserNameTitle>{user.name}</UserNameTitle>
                 <RoleTitle>{t('User')}</RoleTitle>
+                <UserNameTitle>{user.email}</UserNameTitle>
                 <FormInputContainer>
                   <UniversalInput
                     label={t('UserName')}
@@ -98,7 +95,8 @@ export default function UserForm({ callBack }) {
                 <FormBtn
                   type="submit"
                   disabled={
-                    !formik.isValid || !formik.touched || formik.isSubmitting || !formik.dirty
+                    !formik.isValid || !formik.touched || formik.isSubmitting
+                    // || !formik.dirty
                   }
                 >
                   {t('Save changes')}

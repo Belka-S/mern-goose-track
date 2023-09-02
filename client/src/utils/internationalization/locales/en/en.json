@@ -48,7 +48,7 @@
   "Invalid Email": "Invalid email format",
   "Password Required": "Password is a required field",
   "Password Characters": "Password must be at least 6 characters",
-  "Must Match":"Must Match",
+  "Must Match": "Must Match",
 
   "User Profile": "User Profile",
   "Feedback": "Feedback",
@@ -60,7 +60,7 @@
   "Log Out": "Log Out",
 
   "User": "User",
-  "UserName": "User Name",
+  "UserName": "Name",
   "Phone": "Phone",
   "Birthday": "Birthday",
   "Skype": "Skype",
