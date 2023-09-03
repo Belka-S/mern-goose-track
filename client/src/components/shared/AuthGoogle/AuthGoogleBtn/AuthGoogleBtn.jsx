@@ -7,13 +7,13 @@ import { LinkBtn } from './AuthGoogleBtn.styled';
 
 const { DEV, VITE_BACK_URL_DEV, VITE_BACK_URL_PROD } = import.meta.env;
 
-const baseURL = DEV ? VITE_BACK_URL_DEV : VITE_BACK_URL_PROD;
+const baseUrl = DEV ? VITE_BACK_URL_DEV : VITE_BACK_URL_PROD;
 
 const AuthGoogleBtn = ({ title }) => {
   const { t } = useTranslation();
 
   return (
-    <LinkBtn href={`${baseURL}/api/users/google`}>
+    <LinkBtn href={`${baseUrl}/api/users/google`}>
       <SvgGoogle width="24px" height="24px" />
       {t(title)}
     </LinkBtn>

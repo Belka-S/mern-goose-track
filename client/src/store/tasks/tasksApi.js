@@ -5,7 +5,7 @@ const { DEV, VITE_BACK_URL_DEV, VITE_BACK_URL_PROD } = import.meta.env;
 export const tasksApi = createApi({
   reducerPath: 'tasks',
   baseQuery: fetchBaseQuery({
-    baseURL: DEV ? VITE_BACK_URL_DEV : VITE_BACK_URL_PROD,
+    baseUrl: DEV ? `${VITE_BACK_URL_DEV}/api` : `${VITE_BACK_URL_PROD}/api`,
     prepareHeaders: (headers, { getState }) => {
       const token = getState().user.token;
       if (token) {
@@ -17,14 +17,14 @@ export const tasksApi = createApi({
   endpoints: (builder) => ({
     getTasks: builder.query({
       query: (data) => ({
-        url: `/api/tasks?year=${data.year}&month=${data.month}&day=${data.day}`,
+        url: `/tasks?year=${data.year}&month=${data.month}&day=${data.day}`,
         method: 'GET'
       }),
       providesTags: ['tasks']
     }),
     createTasks: builder.mutation({
       query: (tasks) => ({
-        url: '/api/tasks',
+        url: '/tasks',
         method: 'POST',
         body: tasks
       }),
@@ -32,14 +32,14 @@ export const tasksApi = createApi({
     }),
     deleteTasks: builder.mutation({
       query: (tasksID) => ({
-        url: `/api/tasks/${tasksID}`,
+        url: `/tasks/${tasksID}`,
         method: 'DELETE'
       }),
       invalidatesTags: ['tasks']
     }),
     updateTasks: builder.mutation({
       query: ({ id, ...rest }) => ({
-        url: `/api/tasks/${id}`,
+        url: `/tasks/${id}`,
         method: 'PATCH',
         body: { ...rest }
       }),

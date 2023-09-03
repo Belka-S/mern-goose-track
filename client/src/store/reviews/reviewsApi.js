@@ -5,7 +5,7 @@ const { DEV, VITE_BACK_URL_DEV, VITE_BACK_URL_PROD } = import.meta.env;
 export const reviewsApi = createApi({
   reducerPath: 'reviews',
   baseQuery: fetchBaseQuery({
-    baseURL: DEV ? VITE_BACK_URL_DEV : VITE_BACK_URL_PROD,
+    baseUrl: DEV ? `${VITE_BACK_URL_DEV}/api` : `${VITE_BACK_URL_PROD}/api`,
     prepareHeaders: (headers, { getState }) => {
       const token = getState().user.token;
       if (token) {
@@ -17,21 +17,21 @@ export const reviewsApi = createApi({
   endpoints: (builder) => ({
     getReviews: builder.query({
       query: () => ({
-        url: '/api/reviews',
+        url: '/reviews',
         method: 'GET'
       }),
       providesTags: ['reviews']
     }),
     getReviewOwn: builder.query({
       query: () => ({
-        url: '/api/reviews/own',
+        url: '/reviews/own',
         method: 'GET'
       }),
       providesTags: ['reviews']
     }),
     createReviews: builder.mutation({
       query: (review) => ({
-        url: '/api/reviews/own',
+        url: '/reviews/own',
         method: 'POST',
         body: review
       }),
@@ -39,14 +39,14 @@ export const reviewsApi = createApi({
     }),
     deleteReviews: builder.mutation({
       query: (reviewID) => ({
-        url: '/api/reviews/own',
+        url: '/reviews/own',
         method: 'DELETE'
       }),
       invalidatesTags: ['reviews']
     }),
     updateReviews: builder.mutation({
       query: ({ id, ...rest }) => ({
-        url: '/api/reviews/own/',
+        url: '/reviews/own/',
         method: 'PATCH',
         body: { ...rest }
       }),

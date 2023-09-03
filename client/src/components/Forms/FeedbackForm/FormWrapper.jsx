@@ -5,6 +5,7 @@ import { useGetReviewOwnQuery } from 'store/reviews/reviewsApi';
 import FeedbackForm from './FeedbackForm';
 export default function FormWrapper({ onClose }) {
   const { data: reviews, isLoading } = useGetReviewOwnQuery();
+
   let action = 'add';
   if (!isLoading && reviews) {
     if (reviews.length > 0) {
@@ -15,7 +16,7 @@ export default function FormWrapper({ onClose }) {
   return isLoading ? (
     <Loader />
   ) : (
-    <FeedbackForm onClose={onClose} action={action} reviewToEdit={reviews[0]} />
+    <FeedbackForm onClose={onClose} action={action} reviewToEdit={reviews ? reviews[0] : {}} />
   );
 }
 
