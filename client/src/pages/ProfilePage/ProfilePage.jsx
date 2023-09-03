@@ -1,13 +1,13 @@
 import { useDispatch } from 'react-redux';
 import { updUser, changeEM, changePW, delUser } from 'store/auth/authOps';
 
-import UserForm from '../../components/Forms/ProfileForm/UserForm/UserForm';
+import UserForm from 'components/Forms/ProfileForm/UserForm/UserForm';
 
-import DeleteProfileModal from '../../components/DeleteProfileModal/DeleteProfileModal';
-import ChangeEmailModal from '../../components/ChangeEmailModal/ChangeEmailModal';
-import ChangePasswordModal from '../../components/ChangePasswordModal/ChangePasswordModal';
+import DeleteProfileModal from 'components/DeleteProfileModal/DeleteProfileModal';
+import ChangeEmailModal from 'components/ChangeEmailModal/ChangeEmailModal';
+import ChangePasswordModal from 'components/ChangePasswordModal/ChangePasswordModal';
 
-import { AccountPageWrap, BtnWrapper, ChangeValueBtnWrap } from './ProfilePage.styled';
+import { AccountPageWrap, BtnWrapper } from './ProfilePage.styled';
 
 export default function AccountPage() {
   const dispatch = useDispatch();

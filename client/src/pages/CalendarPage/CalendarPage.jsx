@@ -2,8 +2,8 @@ import { addDays, addMonths, format, subDays, subMonths } from 'date-fns';
 import { Suspense } from 'react';
 import { Outlet, useLocation, useNavigate, useParams } from 'react-router-dom';
 
-import { CalendarToolbar } from '../../components/shared/CalendarToolbar/CalendarToolbar';
-import Loader from '../../components/shared/Loader/Loader';
+import { CalendarToolbar } from 'components/shared/CalendarToolbar/CalendarToolbar';
+import Loader from 'components/shared/Loader/Loader';
 
 export default function CalendarPage() {
   const { currentDate } = useParams();

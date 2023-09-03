@@ -4,12 +4,11 @@ import PropTypes from 'prop-types';
 import Modal from 'components/shared/Modal/Modal';
 
 import { modalBackdropcolors } from 'styles/variables/themes';
+import { TaskForm } from 'components/forms/TaskForm/TaskForm';
 
 import ColumnHeadBar from '../ColumnHeadBar/ColumnHeadBar';
 import ColumnTasksList from '../ColumnTasksList/ColumnTasksList';
 import AddTaskBtn from '../AddTaskBtn/AddTaskBtn';
-
-import { TaskForm } from '../../../../components/Forms/TaskForm/TaskForm';
 
 import { TasksColumnStyles } from './TasksColumn.styled';
 
