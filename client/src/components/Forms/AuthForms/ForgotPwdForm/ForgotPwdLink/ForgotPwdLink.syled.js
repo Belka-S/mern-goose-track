@@ -4,7 +4,6 @@ import { themes } from 'styles/variables/themes';
 
 export const RouteLink = styled(Link)`
   text-decoration: underline;
-  font-style: italic;
   color: ${themes.colors.accent};
   cursor: pointer;
 
