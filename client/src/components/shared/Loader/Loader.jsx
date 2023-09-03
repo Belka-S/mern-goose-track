@@ -1,8 +1,8 @@
 // import { Puff } from 'react-loader-spinner';
 
-import gooseLoader from 'images/others/gooseLoader.gif';
+import gooseLoader from 'images/others/gooseLoader.webp';
 
-import { DivloaderContainer } from '../../Styled-Components/Styled-Components.styled';
+import { DivloaderContainer } from 'components/Styled-Components/Styled-Components.styled';
 
 export default function Loader() {
   return (
