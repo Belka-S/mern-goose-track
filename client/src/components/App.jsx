@@ -10,7 +10,7 @@ import { GlobalStyle } from 'styles/Basic/globalStyles.styled';
 import PrivateRoutes from 'components/shared/Routes/PrivateRoutes';
 import PubliceRourtes from 'components/shared/Routes/PubliceRoutes';
 import MainLayout from 'components/MainLayout/MainLayout';
-import AccountPage from 'pages/ProfilePage/ProfilePage';
+import ProfilePage from 'pages/ProfilePage/ProfilePage';
 import CalendarPage from 'pages/CalendarPage/CalendarPage';
 import ChoosedMonth from 'pages/CalendarPage/ChoosedMonth/ChoosedMonth';
 import ChoosedDay from 'pages/CalendarPage/ChoosedDay/ChoosedDay';
@@ -27,7 +27,7 @@ import RegisterPage from 'pages/RegisterPage/RegisterPage';
 import routes from 'components/routes.js';
 
 // const MainLayout = lazy(() => import('./components/MainLayout/MainLayout'));
-// const AccountPage = lazy(() => import('./components/AccountPage/AccountPage'));
+// const ProfilePage = lazy(() => import('./components/ProfilePage/ProfilePage'));
 // // const CalendarPage = lazy(() => import('./components/CalendarPage/CalendarPage'));
 // // const ChoosedMonth = lazy(() => import('./components/CalendarPage/ChoosedMonth/ChoosedMonth'));
 // // const ChoosedDay = lazy(() => import('./components/CalendarPage/ChoosedDay/ChoosedDay'));
@@ -59,7 +59,7 @@ function App() {
           </Route>
           <Route element={<PrivateRoutes />}>
             <Route path={routes.mainLayout} element={<MainLayout />}>
-              <Route path={routes.accountPage} element={<AccountPage />} />
+              <Route path={routes.profilePage} element={<ProfilePage />} />
               <Route path={routes.calendarPage} element={<CalendarPage />}>
                 <Route path={routes.calendarMonth} element={<ChoosedMonth />} />
                 <Route path={routes.calendarDay} element={<ChoosedDay />} />

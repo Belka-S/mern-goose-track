@@ -20,8 +20,8 @@ export default function UserNav(callBackCls) {
 
   return (
     <NavUl>
-      <li key="AccountPage">
-        <NavLinkStyled to={routes.accountPage} onClick={callBackCls}>
+      <li key="ProfilePage">
+        <NavLinkStyled to={routes.profilePage} onClick={callBackCls}>
           <IconDiv>
             <UserCheck />
           </IconDiv>

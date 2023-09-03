@@ -7,9 +7,9 @@ import DeleteProfileModal from 'components/DeleteProfileModal/DeleteProfileModal
 import ChangeEmailModal from 'components/ChangeEmailModal/ChangeEmailModal';
 import ChangePasswordModal from 'components/ChangePasswordModal/ChangePasswordModal';
 
-import { AccountPageWrap, BtnWrapper } from './ProfilePage.styled';
+import { ProfilePageWrap, BtnWrapper } from './ProfilePage.styled';
 
-export default function AccountPage() {
+export default function ProfilePage() {
   const dispatch = useDispatch();
   const callBack = (data) => {
     dispatch(updUser(data));
@@ -25,7 +25,7 @@ export default function AccountPage() {
   };
 
   return (
-    <AccountPageWrap>
+    <ProfilePageWrap>
       <UserForm
         callBack={callBack}
         callbackEmail={callbackEmail}
@@ -37,6 +37,6 @@ export default function AccountPage() {
         <ChangePasswordModal callbackPassword={callbackPassword} />
         <DeleteProfileModal callbackDeleteUser={callbackDeleteUser} />
       </BtnWrapper>
-    </AccountPageWrap>
+    </ProfilePageWrap>
   );
 }

@@ -7,7 +7,7 @@ const routes = {
   resetPassword: '/reset',
   verify: '/verify', //  :verifycode
   mainLayout: '/',
-  accountPage: '/account',
+  profilePage: '/account',
   calendarPage: '/calendar',
   calendarMonth: '/calendar/month/:currentDate',
   calendarDay: '/calendar/day/:currentDate',

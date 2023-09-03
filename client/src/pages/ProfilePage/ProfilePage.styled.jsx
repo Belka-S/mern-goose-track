@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { themes } from 'styles/variables/themes';
 
-export const AccountPageWrap = styled.div`
+export const ProfilePageWrap = styled.div`
   padding: 0 18px 40px 18px;
   background-color: white;
   border-radius: 16px;
