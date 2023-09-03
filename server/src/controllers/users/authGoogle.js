@@ -9,8 +9,8 @@ const frontUrl = NODE_ENV === 'development' ? FRONT_URL_DEV : FRONT_URL_PROD;
 
 const authGoogle = async (req, res) => {
   const { _id: id } = req.user;
-  const token = jwt.sign({ id }, ACCESS_SECRET_KEY, { expiresIn: '5h' });
-  const refreshToken = jwt.sign({ id }, REFRESH_SECRET_KEY, { expiresIn: '1d' });
+  const token = jwt.sign({ id }, ACCESS_SECRET_KEY, { expiresIn: '60s' });
+  const refreshToken = jwt.sign({ id }, REFRESH_SECRET_KEY, { expiresIn: '7d' });
   const newUser = await User.findByIdAndUpdate(id, { token, refreshToken });
   if (!newUser) throw HttpError(500, 'Failed to log in.');
 

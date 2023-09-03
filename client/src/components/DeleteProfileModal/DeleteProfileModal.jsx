@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import Modal from 'components/shared/Modal/Modal';
-import { updUser, delUser } from 'store/auth/authOps';
+import { delUser } from 'store/auth/authOps';
 
 import DeleteProfileForm from 'components/forms/ProfileForm/DeleteProfileForm/DeleteProfileForm';
 
