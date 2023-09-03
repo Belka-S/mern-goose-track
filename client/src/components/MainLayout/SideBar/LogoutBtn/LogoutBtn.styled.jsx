@@ -31,7 +31,7 @@ export const LogOutBtn = styled.button`
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
   @media screen and (${themes.breakpoints.s}< width <= ${themes.breakpoints.m}) {
     bottom: 24px;

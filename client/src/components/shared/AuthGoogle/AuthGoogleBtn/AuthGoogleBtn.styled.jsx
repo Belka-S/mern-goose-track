@@ -35,7 +35,7 @@ export const LinkBtn = styled.a`
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.02);
     border-color: ${themes.colors.textAndIconTodo};
   }
   &.disabled {

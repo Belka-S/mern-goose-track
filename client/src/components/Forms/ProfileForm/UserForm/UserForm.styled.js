@@ -44,7 +44,7 @@ export const FormInputContainer = styled.div`
   gap: 10px;
 
   @media screen and (${themes.breakpoints.m} <= width < ${themes.breakpoints.l}) {
-    gap: 16px;
+    gap: 12px;
   }
 
   @media screen and (${themes.breakpoints.l} <= width) {
@@ -70,8 +70,8 @@ export const FormBtn = styled.button`
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  margin-top: 32px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   border-radius: 16px;
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.accent};
@@ -83,7 +83,7 @@ export const FormBtn = styled.button`
   &:hover,
   &:focus {
     background-color: ${({ theme }) => theme.colors.hovered};
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 
   &:disabled {
@@ -95,6 +95,6 @@ export const FormBtn = styled.button`
   @media screen and (${themes.breakpoints.m} <= width) {
     width: 262px;
     height: 48px;
-    margin-top: 80px;
+    margin-top: 30px;
   }
 `;

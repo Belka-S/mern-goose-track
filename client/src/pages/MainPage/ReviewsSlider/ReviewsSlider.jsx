@@ -43,7 +43,7 @@ export default function ReviewsSlider() {
         slidesPerView={1}
         modules={[Navigation, Keyboard, EffectCoverflow, Autoplay]}
         direction={'horizontal'}
-        loop={true}
+        loop={false}
         grabCursor={true}
         autoplay={{
           delay: 3000,

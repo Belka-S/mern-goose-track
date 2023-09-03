@@ -33,10 +33,8 @@ export default function AccountPage() {
         callbackDeleteUser={callbackDeleteUser}
       />
       <BtnWrapper>
-        <ChangeValueBtnWrap>
-          <ChangeEmailModal callbackEmail={callbackEmail} />
-          <ChangePasswordModal callbackPassword={callbackPassword} />
-        </ChangeValueBtnWrap>
+        <ChangeEmailModal callbackEmail={callbackEmail} />
+        <ChangePasswordModal callbackPassword={callbackPassword} />
         <DeleteProfileModal callbackDeleteUser={callbackDeleteUser} />
       </BtnWrapper>
     </AccountPageWrap>

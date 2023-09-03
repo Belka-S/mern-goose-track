@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { themes } from 'styles/variables/themes';
 
 export const ChangeValueBtn = styled.button`
-  width: 172px;
-  height: 48px;
+  width: 195px;
+  height: 46px;
   font-family: Inter;
   font-size: 14px;
   font-weight: 600;
@@ -22,7 +22,7 @@ export const ChangeValueBtn = styled.button`
   &:hover,
   &:focus {
     background-color: #2b78ef;
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 
   /* @media screen and (${themes.breakpoints.m} <= width < ${themes.breakpoints.l}) {
@@ -30,6 +30,7 @@ export const ChangeValueBtn = styled.button`
   } */
 
   @media screen and (${themes.breakpoints.l} <= width) {
-    width: 195px;
+    width: 262px;
+    height: 48px;
   }
 `;

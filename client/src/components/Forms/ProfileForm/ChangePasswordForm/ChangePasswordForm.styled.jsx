@@ -84,7 +84,7 @@ export const UpdateBtn = styled.button`
   &:hover,
   &:focus {
     background-color: #2b78ef;
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 
   &:disabled {
@@ -112,6 +112,6 @@ export const CancelBtn = styled.button`
   &:focus {
     color: white;
     background-color: #2b78ef;
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 `;

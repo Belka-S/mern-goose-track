@@ -9,11 +9,11 @@ export const AccountPageWrap = styled.div`
   background: ${({ theme }) => theme.colors.backgroundUserForm};
 
   @media screen and (${themes.breakpoints.m} <= width < ${themes.breakpoints.l}) {
-    padding: 40px 175px 40px 175px;
+    padding: 20px 130px 20px 130px;
   }
 
   @media screen and (${themes.breakpoints.l} <= width) {
-    padding: 60px 165px 60px 164px;
+    padding: 30px 160px 30px 160px;
   }
 `;
 
@@ -27,22 +27,7 @@ export const BtnWrapper = styled.div`
   @media screen and (${themes.breakpoints.l} <= width) {
     flex-wrap: wrap;
     flex-direction: row;
-    bottom: 8%;
-    right: -8%;
-    gap: 20px;
-  }
-`;
-
-export const ChangeValueBtnWrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  @media screen and (${themes.breakpoints.m} <= width) {
-    flex-direction: row;
-  }
-
-  @media screen and (${themes.breakpoints.l} < width) {
-    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 `;

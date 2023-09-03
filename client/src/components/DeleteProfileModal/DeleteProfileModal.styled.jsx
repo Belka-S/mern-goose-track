@@ -22,10 +22,11 @@ export const DeleteProfileBtn = styled.button`
   &:hover,
   &:focus {
     background-color: #bb0202;
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 
   @media screen and (${themes.breakpoints.l} <= width) {
-    width: 195px;
+    width: 262px;
+    height: 48px;
   }
 `;

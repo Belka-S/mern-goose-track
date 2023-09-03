@@ -102,7 +102,7 @@ export const themes = Object.freeze({
     l: '1440px'
   },
   animations: {
-    cubicBezier: 'cubic-bezier(0, 0.110, 0.35, 2)',
+    cubicBezier: 'cubic-bezier(0, 0.5, 1.3, 2)',
     duration: '250ms'
   },
   shadows: {

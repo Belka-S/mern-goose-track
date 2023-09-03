@@ -17,7 +17,7 @@ export const FlagBtn = styled.button`
   transition-timing-function: ${themes.animations.cubicBezier};
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 `;
 

@@ -7,8 +7,9 @@ function getRandomHexColor() {
 
 export const Wrapper = styled.section`
   margin: 0 auto;
-  padding-inline: 20px;
+  width: 100%;
   max-width: 375px;
+  padding-inline: 20px;
 
   @media (min-width: ${themes.breakpoints.m}) {
     padding-inline: 94px;
@@ -57,7 +58,10 @@ export const ReviewsItem = styled.div`
   box-sizing: border-box;
   padding: 24px;
   max-width: 335px;
+
   height: 194px;
+
+  outline: 1px;
 
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-width: 1px;
@@ -70,7 +74,7 @@ export const ReviewsItem = styled.div`
 
   @media (min-width: ${themes.breakpoints.m}) {
     padding: 32px 32px 50px;
-    max-width: 580px;
+    max-width: 550px;
     height: 187px;
   }
 `;

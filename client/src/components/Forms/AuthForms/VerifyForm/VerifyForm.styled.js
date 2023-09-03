@@ -141,7 +141,7 @@ export const Button = styled.button`
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 `;
 

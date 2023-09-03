@@ -125,11 +125,11 @@ export const AuthLink = styled(NavLink)`
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
   @media ${device.tablet} {
     font-size: ${({ colorbtn }) =>
-    colorbtn === 'white' ? themes.fontSizes.s : themes.fontSizes.l};
+      colorbtn === 'white' ? themes.fontSizes.s : themes.fontSizes.l};
     line-height: 1.3;
     padding: 14px 22px;
   }
