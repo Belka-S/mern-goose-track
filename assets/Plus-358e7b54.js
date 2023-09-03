@@ -1,0 +1,1 @@
+import{j as o}from"./index-b0910c9a.js";const s=t=>o.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",stroke:"currentColor",viewBox:"0 0 32 32",...t,children:o.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2.667,d:"M16 6.667v18.667M6.667 16h18.667"})});export{s as S};
