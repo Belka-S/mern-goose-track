@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import Modal from 'components/shared/Modal/Modal';
 import { delUser } from 'store/auth/authOps';
-
+import Modal from 'components/shared/Modal/Modal';
 import DeleteProfileForm from 'components/forms/ProfileForm/DeleteProfileForm/DeleteProfileForm';
 
 import { DeleteProfileBtn } from './DeleteProfileModal.styled';

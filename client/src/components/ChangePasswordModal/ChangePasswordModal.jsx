@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Modal from 'components/shared/Modal/Modal';
-
 import ChangePasswordForm from 'components/forms/ProfileForm/ChangePasswordForm/ChangePasswordForm';
 
 import { UpdatePasswordBtn } from './ChangePasswordModal.styled';

@@ -2,10 +2,9 @@ import { useState } from 'react';
 import { Formik } from 'formik';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-
-import PasswordInput from '../../PasswordInput/PasswordInput';
-import { validationChangePasswordRules } from '../accountValidationRules';
-import { XClose } from '../../../shared/Icons';
+import PasswordInput from 'components/forms/PasswordInput/PasswordInput';
+import { XClose } from 'components/shared/Icons';
+import { validationChangePasswordRules } from 'components/forms/ProfileForm/accountValidationRules';
 
 import {
   Modal,
