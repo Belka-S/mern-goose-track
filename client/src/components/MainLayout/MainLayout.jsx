@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { modalBackdropcolors } from 'styles/variables/themes';
 import Loader from 'components/shared/Loader/Loader';
 import Modal from 'components/shared/Modal/Modal';
@@ -40,7 +40,11 @@ const Layout = () => {
         <SideBar open={open} callBackCls={callBackCls} />
         <MainLayOutSubContainer>
           <AppHeader callBack={callBack} onGiveFeedBack={toggleModal} />
-          <ChildrenContainer>{<Outlet />}</ChildrenContainer>
+          <ChildrenContainer>
+            <Suspense fallback={<Loader />}>
+              <Outlet />
+            </Suspense>
+          </ChildrenContainer>
         </MainLayOutSubContainer>
       </MainLayOutContainer>
 

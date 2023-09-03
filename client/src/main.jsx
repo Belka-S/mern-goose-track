@@ -10,7 +10,7 @@ import { store, persistor } from 'store/store';
 import './utils/internationalization/i18next';
 
 import App from './components/App.jsx';
-import './index.css';
+import './main.css';
 
 const { BASE_URL } = import.meta.env;
 

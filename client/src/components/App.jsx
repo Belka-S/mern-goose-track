@@ -4,39 +4,28 @@ import { ToastContainer, toast } from 'react-toastify';
 import { useError } from 'store/selectors';
 import { ThemeProvider } from 'styled-components';
 
-import { useThemeColors } from 'components/MainLayout/ThemeToggler/ThemeContextProvider';
+import routes from 'components/routes.js';
 import { GlobalStyle } from 'styles/Basic/globalStyles.styled';
+import { useThemeColors } from 'components/MainLayout/ThemeToggler/ThemeContextProvider';
 
 import PrivateRoutes from 'components/shared/Routes/PrivateRoutes';
 import PubliceRourtes from 'components/shared/Routes/PubliceRoutes';
 import MainLayout from 'components/MainLayout/MainLayout';
-import ProfilePage from 'pages/ProfilePage/ProfilePage';
-import CalendarPage from 'pages/CalendarPage/CalendarPage';
-import ChoosedMonth from 'pages/CalendarPage/ChoosedMonth/ChoosedMonth';
-import ChoosedDay from 'pages/CalendarPage/ChoosedDay/ChoosedDay';
-import StatisticsPage from 'pages/StatisticsPage/StatisticsPage';
-import Loader from 'components/shared/Loader/Loader';
-import MainPage from 'pages/MainPage';
-import ErrorPage from 'pages/ErrorPage/ErrorPage';
-import LoginPage from 'pages/LoginPage/LoginPage';
-import ForgotPwdPage from 'pages/ForgotPwdPage/ForgotPwdPage';
-import ResetPwdPage from 'pages/ResetPwdPage/ResetPwdPage';
 import AuthGoogle from 'components/shared/AuthGoogle/AuthGoogle';
-import RegisterPage from 'pages/RegisterPage/RegisterPage';
+import Loader from 'components/shared/Loader/Loader';
 
-import routes from 'components/routes.js';
+const MainPage = lazy(() => import('pages/MainPage'));
+const ErrorPage = lazy(() => import('pages/ErrorPage/ErrorPage'));
+const LoginPage = lazy(() => import('pages/LoginPage/LoginPage'));
+const RegisterPage = lazy(() => import('pages/RegisterPage/RegisterPage'));
+const ResetPwdPage = lazy(() => import('pages/ResetPwdPage/ResetPwdPage'));
+const ForgotPwdPage = lazy(() => import('pages/ForgotPwdPage/ForgotPwdPage'));
 
-// const MainLayout = lazy(() => import('./components/MainLayout/MainLayout'));
-// const ProfilePage = lazy(() => import('./components/ProfilePage/ProfilePage'));
-// // const CalendarPage = lazy(() => import('./components/CalendarPage/CalendarPage'));
-// // const ChoosedMonth = lazy(() => import('./components/CalendarPage/ChoosedMonth/ChoosedMonth'));
-// // const ChoosedDay = lazy(() => import('./components/CalendarPage/ChoosedDay/ChoosedDay'));
-// // const StatisticsPage = lazy(() => import('./components/StatisticsPage/StatisticsPage'));
-// const AuthGoogle = lazy(() => import('./components/shared/AuthGoogle/AuthGoogle'));
-// const MainPage = lazy(() => import('./pages/MainPage'));
-// const ErrorPage = lazy(() => import('./pages/ErrorPage/ErrorPage'));
-// const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
-// const RegisterPage = lazy(() => import('./pages/RegisterPage/RegisterPage'));
+const ProfilePage = lazy(() => import('pages/ProfilePage/ProfilePage'));
+const CalendarPage = lazy(() => import('pages/CalendarPage/CalendarPage'));
+const ChoosedMonth = lazy(() => import('pages/CalendarPage/ChoosedMonth/ChoosedMonth'));
+const ChoosedDay = lazy(() => import('pages/CalendarPage/ChoosedDay/ChoosedDay'));
+const StatisticsPage = lazy(() => import('pages/StatisticsPage/StatisticsPage'));
 
 function App() {
   const error = useError();
@@ -53,9 +42,9 @@ function App() {
             <Route path={routes.mainPage} element={<MainPage isHomePage={true} />} />
             <Route path={routes.registerPage} element={<RegisterPage />} />
             <Route path={routes.loginPage} element={<LoginPage />} />
-            <Route path={routes.authGoogle} element={<AuthGoogle />} />
             <Route path={routes.forgotPassword} element={<ForgotPwdPage />} />
             <Route path={routes.resetPassword} element={<ResetPwdPage />} />
+            <Route path={routes.authGoogle} element={<AuthGoogle />} />
           </Route>
           <Route element={<PrivateRoutes />}>
             <Route path={routes.mainLayout} element={<MainLayout />}>
