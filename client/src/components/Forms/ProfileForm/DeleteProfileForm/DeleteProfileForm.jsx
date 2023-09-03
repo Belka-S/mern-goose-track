@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-
-import { XClose, ValidationError } from '../../../shared/Icons';
+import { XClose, ValidationError } from 'components/shared/Icons';
 
 import {
   Modal,
