@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import Modal from 'components/shared/Modal/Modal';
+import { updUser, delUser } from 'store/auth/authOps';
 
 import DeleteProfileForm from 'components/forms/ProfileForm/DeleteProfileForm/DeleteProfileForm';
 
@@ -10,7 +11,7 @@ import { DeleteProfileBtn } from './DeleteProfileModal.styled';
 export default function DeleteProfileModal() {
   const dispatch = useDispatch();
   const callBack = (data) => {
-    // dispatch(updUser(data));
+    dispatch(delUser(data));
   };
   const { t } = useTranslation();
 
