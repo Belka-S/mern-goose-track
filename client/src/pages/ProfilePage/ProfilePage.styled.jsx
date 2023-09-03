@@ -9,11 +9,11 @@ export const ProfilePageWrap = styled.div`
   background: ${({ theme }) => theme.colors.backgroundUserForm};
 
   @media screen and (${themes.breakpoints.m} <= width < ${themes.breakpoints.l}) {
-    padding: 20px 130px 20px 130px;
+    padding: 20px 80px 20px 80px;
   }
 
   @media screen and (${themes.breakpoints.l} <= width) {
-    padding: 30px 160px 30px 160px;
+    padding: 30px 100px 30px 100px;
   }
 `;
 

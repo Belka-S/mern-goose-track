@@ -15,6 +15,7 @@ export const InputField = styled(Field)`
   font-weight: 600;
   letter-spacing: -0.02em;
   width: 199px;
+  height: 36px;
   color: ${({ theme }) => theme.colors.textCancelBtn};
   border-width: 1px;
   border-style: solid;

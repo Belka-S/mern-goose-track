@@ -6,11 +6,12 @@ export const AvatarContainer = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-bottom: 14px;
-  top: -31px;
+  margin-bottom: -20px;
+  top: -30px;
 
   @media screen and (${themes.breakpoints.m} <= width) {
     top: 0;
+    margin-bottom: 14px;
   }
 `;
 

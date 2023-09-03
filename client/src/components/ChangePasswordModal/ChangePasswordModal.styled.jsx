@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { themes } from 'styles/variables/themes';
 
 export const UpdatePasswordBtn = styled.button`
-  width: 172px;
-  height: 48px;
+  width: 195px;
+  height: 46px;
   font-family: Inter;
   font-size: 14px;
   font-weight: 600;
@@ -29,7 +29,7 @@ export const UpdatePasswordBtn = styled.button`
     margin-bottom: 20px;
   } */
 
-  @media screen and (${themes.breakpoints.l} <= width) {
+  @media screen and (${themes.breakpoints.m} <= width) {
     width: 262px;
     height: 48px;
   }

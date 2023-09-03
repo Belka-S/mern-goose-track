@@ -29,7 +29,7 @@ export const ChangeValueBtn = styled.button`
     margin-bottom: 20px;
   } */
 
-  @media screen and (${themes.breakpoints.l} <= width) {
+  @media screen and (${themes.breakpoints.m} <= width) {
     width: 262px;
     height: 48px;
   }
