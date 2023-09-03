@@ -6,9 +6,8 @@ const { HttpError } = require('../../utils');
 const { ACCESS_SECRET_KEY, REFRESH_SECRET_KEY } = process.env;
 
 const refresh = ctrlWrapper(async (req, res, next) => {
-  // req.body do not attach refreshToken sometimes !!!  console.log('req.body: ', req.body.refreshToken);  console.log('req.headers: ', req.headers.refreshtoken);
-  const token = req.headers.refreshtoken;
-
+  const token = req.body.refreshToken;
+  // const token = req.headers.refreshtoken;
   try {
     const { id } = jwt.verify(token, REFRESH_SECRET_KEY);
     const user = await User.findOne({ refreshToken: token });
@@ -16,7 +15,7 @@ const refresh = ctrlWrapper(async (req, res, next) => {
     if (!user || !user.refreshToken || user.refreshToken !== token) {
       next(HttpError(403));
     }
-    const accessToken = jwt.sign({ id }, ACCESS_SECRET_KEY, { expiresIn: '5h' });
+    const accessToken = jwt.sign({ id }, ACCESS_SECRET_KEY, { expiresIn: '60s' });
     const refreshToken = jwt.sign({ id }, REFRESH_SECRET_KEY, { expiresIn: '7d' });
     const newUser = await User.findByIdAndUpdate(
       user._id,
