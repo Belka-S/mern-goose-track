@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { delUser } from 'store/auth/authOps';
 import Modal from 'components/shared/Modal/Modal';
-import DeleteProfileForm from 'components/Forms/ProfileForm/DeleteProfileForm/DeleteProfileForm.jsx';
+import DeleteProfileForm from 'components/Forms/ProfileForm/DeleteProfileForm/DeleteProfileForm';
 
 import { DeleteProfileBtn } from './DeleteProfileModal.styled';
 

@@ -1,10 +1,11 @@
-import { Suspense, Lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { useError } from 'store/selectors';
 import { ThemeProvider } from 'styled-components';
 
 import { useThemeColors } from 'components/MainLayout/ThemeToggler/ThemeContextProvider';
+import { GlobalStyle } from 'styles/Basic/globalStyles.styled';
 
 import PrivateRoutes from 'components/shared/Routes/PrivateRoutes';
 import PubliceRourtes from 'components/shared/Routes/PubliceRoutes';
@@ -21,12 +22,9 @@ import LoginPage from 'pages/LoginPage/LoginPage';
 import ForgotPwdPage from 'pages/ForgotPwdPage/ForgotPwdPage';
 import ResetPwdPage from 'pages/ResetPwdPage/ResetPwdPage';
 import AuthGoogle from 'components/shared/AuthGoogle/AuthGoogle';
-
 import RegisterPage from 'pages/RegisterPage/RegisterPage';
-// import { DivWrapperAPP, DivColorWrapperAPP } from 'App.styled';
 
 import routes from 'components/routes.js';
-import { GlobalStyle } from 'styles/Basic/globalStyles.styled';
 
 // const MainLayout = lazy(() => import('./components/MainLayout/MainLayout'));
 // const AccountPage = lazy(() => import('./components/AccountPage/AccountPage'));
@@ -49,8 +47,6 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <DivColorWrapperAPP> */}
-      {/* <DivWrapperAPP> */}
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route element={<PubliceRourtes />}>
@@ -75,8 +71,6 @@ function App() {
         </Routes>
       </Suspense>
       <ToastContainer hideProgressBar closeOnClick theme={theme.toastify.theme} />
-      {/* </DivWrapperAPP> */}
-      {/* </DivColorWrapperAPP> */}
       <GlobalStyle />
     </ThemeProvider>
   );

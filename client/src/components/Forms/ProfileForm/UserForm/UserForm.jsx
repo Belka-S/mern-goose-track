@@ -1,14 +1,11 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Formik, Form } from 'formik';
-import { format } from 'date-fns';
-
 import { useTranslation } from 'react-i18next';
 
 import { useUser } from 'store/selectors';
-
-import UniversalInput from '../../UniversalInput/UniversalInput';
-import AccountAvatar from '../UserAvatar/UserAvatar';
+import UniversalInput from 'components/Forms/UniversalInput/UniversalInput';
+import AccountAvatar from 'components/Forms/ProfileForm/UserAvatar/UserAvatar';
 
 import { validationAvatarRules, validationUserFormRules } from '../accountValidationRules';
 
