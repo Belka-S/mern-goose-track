@@ -21,14 +21,14 @@ export const IconLight = styled(FiSun)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   color: ${({ theme }) => theme.colors.white};
 `;
 
 export const IconDark = styled(FaRegMoon)`
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;

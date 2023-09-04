@@ -3,14 +3,13 @@ import { Field, ErrorMessage as FormikErrorMessage } from 'formik';
 import { themes } from 'styles/variables/themes';
 
 export const Label = styled.label`
-  width: 100%;
   @media screen and (${themes.breakpoints.s} <= width) {
-    margin: 0 auto;
+    align-self: center;
   }
 `;
 
 export const FormLabelSpan = styled.span`
-  display: flex;
+  display: block;
   margin-bottom: 8px;
   margin-top: 16px;
   color: ${({ theme }) => theme.colors.placeholder};

@@ -5,7 +5,7 @@ import { themes } from 'styles/variables/themes';
 export const NavigateLink = styled(NavLink)`
   color: ${themes.colors.accent};
   text-shadow: ${themes.shadows.authHeading};
-  font-size: ${themes.fontSizes.xs};
+  font-size: ${themes.fontSizes.s};
   font-style: normal;
   font-weight: ${themes.fontWeight.sb};
   line-height: 14px;
