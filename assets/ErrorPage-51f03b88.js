@@ -1,4 +1,4 @@
-import{s as o,p as n,q as i,u as x,v as p,w as c,j as e,X as l}from"./index-c6108a81.js";const d="/mern-goose-track/assets/gooseRocketMobile-3165b02a.svg",s="/mern-goose-track/assets/gooseRocketTablet-0236e75b.svg",g=o.div`
+import{s as o,p as n,q as i,u as x,v as p,w as c,j as e,X as l}from"./index-3bc93957.js";const d="/mern-goose-track/assets/gooseRocketMobile-3165b02a.svg",s="/mern-goose-track/assets/gooseRocketTablet-0236e75b.svg",g=o.div`
   height: 100vh;
 
   display: flex;

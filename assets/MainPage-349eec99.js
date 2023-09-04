@@ -1,4 +1,4 @@
-import{G as xe,s as O,t as P,d as lt,N as dt,u as be,j as x,T as ct,L as ft,l as Ce,a as ut,b as pt,c as mt,e as ht,f as gt,g as vt,h as wt,i as xt,r as Pe,P as Z,R as D,k,m as bt,n as St,F as Tt,S as yt,o as Et}from"./index-c6108a81.js";function Ct(t){return xe({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{d:"M1.02698 11.9929L5.26242 16.2426L6.67902 14.8308L4.85766 13.0033L22.9731 13.0012L22.9728 11.0012L4.85309 11.0033L6.6886 9.17398L5.27677 7.75739L1.02698 11.9929Z",fill:"currentColor"}}]})(t)}function Pt(t){return xe({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{d:"M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z",fill:"currentColor"}}]})(t)}function Mt(t){return xe({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{d:"M15.4857 20H19.4857C20.5903 20 21.4857 19.1046 21.4857 18V6C21.4857 4.89543 20.5903 4 19.4857 4H15.4857V6H19.4857V18H15.4857V20Z",fill:"currentColor"}},{tag:"path",attr:{d:"M10.1582 17.385L8.73801 15.9768L12.6572 12.0242L3.51428 12.0242C2.96199 12.0242 2.51428 11.5765 2.51428 11.0242C2.51429 10.4719 2.962 10.0242 3.51429 10.0242L12.6765 10.0242L8.69599 6.0774L10.1042 4.6572L16.4951 10.9941L10.1582 17.385Z",fill:"currentColor"}}]})(t)}const Lt=O.div`
+import{G as xe,s as O,t as P,d as lt,N as dt,u as be,j as x,T as ct,L as ft,l as Ce,a as ut,b as pt,c as mt,e as ht,f as gt,g as vt,h as wt,i as xt,r as Pe,P as Z,R as D,k,m as bt,n as St,F as Tt,S as yt,o as Et}from"./index-3bc93957.js";function Ct(t){return xe({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{d:"M1.02698 11.9929L5.26242 16.2426L6.67902 14.8308L4.85766 13.0033L22.9731 13.0012L22.9728 11.0012L4.85309 11.0033L6.6886 9.17398L5.27677 7.75739L1.02698 11.9929Z",fill:"currentColor"}}]})(t)}function Pt(t){return xe({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{d:"M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z",fill:"currentColor"}}]})(t)}function Mt(t){return xe({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none"},child:[{tag:"path",attr:{d:"M15.4857 20H19.4857C20.5903 20 21.4857 19.1046 21.4857 18V6C21.4857 4.89543 20.5903 4 19.4857 4H15.4857V6H19.4857V18H15.4857V20Z",fill:"currentColor"}},{tag:"path",attr:{d:"M10.1582 17.385L8.73801 15.9768L12.6572 12.0242L3.51428 12.0242C2.96199 12.0242 2.51428 11.5765 2.51428 11.0242C2.51429 10.4719 2.962 10.0242 3.51429 10.0242L12.6765 10.0242L8.69599 6.0774L10.1042 4.6572L16.4951 10.9941L10.1582 17.385Z",fill:"currentColor"}}]})(t)}const Lt=O.div`
   position: absolute;
   top: 7%;
   right: 5%;
@@ -86,7 +86,7 @@ import{G as xe,s as O,t as P,d as lt,N as dt,u as be,j as x,T as ct,L as ft,l as
   padding: 14px 32px;
   border-radius: 16px;
   font-weight: 600;
-  font-size: ${({colorbtn:t})=>t==="white"?P.fontSizes.s:P.fontSizes.xs};
+  font-size: ${({colorbtn:t})=>t==="white"?P.fontSizes.xs:P.fontSizes.s};
   line-height: 1.3;
   letter-spacing: -0.02em;
   cursor: pointer;
@@ -108,7 +108,7 @@ import{G as xe,s as O,t as P,d as lt,N as dt,u as be,j as x,T as ct,L as ft,l as
     transform: scale(1.02);
   }
   @media ${lt.tablet} {
-    font-size: ${({colorbtn:t})=>t==="white"?P.fontSizes.s:P.fontSizes.l};
+    font-size: ${({colorbtn:t})=>t==="white"?P.fontSizes.m:P.fontSizes.l};
     line-height: 1.3;
     padding: 14px 22px;
   }
