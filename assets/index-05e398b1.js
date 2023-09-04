@@ -663,7 +663,7 @@ attempted value: ${o}
   display: flex;
   justify-content: t;
   align-items: center;
-  margin-bottom: 95px;
+  margin-bottom: 45px;
   padding-top: 24px;
 
   @media screen and (${ee.breakpoints.s} < width) {
@@ -759,6 +759,8 @@ attempted value: ${o}
   color: ${({theme:e})=>e.colors.placeholder};
 `,Obe=q(dP)`
   width: 100%;
+  display: flex;
+  flex-grow: 1;
 
   height: 36px;
   font-size: 14px;
@@ -1308,14 +1310,18 @@ attempted value: ${o}
   }
 `,pwe=q.div`
   display: flex;
-
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 16px 50px;
+
   width: 100%;
 
-  @media screen and (width <= ${ee.breakpoints.m}) {
-    flex-direction: column;
-    align-items: center;
+  @media screen and (${ee.breakpoints.l} <= width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 758px;
+    position: relative;
   }
 `;const hwe=q.div`
   display: flex;
@@ -2005,4 +2011,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-`,xze=()=>{const{t:e}=zt(),[t,r]=k.useState(gn(new Date,"yyyy-MM-dd")),{data:n,isLoading:i,isFetching:a}=bK({year:Ae(new Date(t)),month:wr(new Date(t))+1,day:MS(new Date(t))}),o=()=>{const u=IT(new Date(t),1);r(gn(new Date(u),"yyyy-MM-dd"))},s=()=>{const u=ss(new Date(t),1);r(gn(new Date(u),"yyyy-MM-dd"))};return C.jsxs(yze,{children:[C.jsxs(bze,{children:[C.jsx(GP,{prevHandler:o,nextHandler:s,type:"day",date:t,setCurrentDate:r}),C.jsxs(wze,{children:[C.jsxs(D3,{children:[C.jsx(M3,{type:"day"}),C.jsx(R3,{children:e("By Day")})]}),C.jsxs(D3,{children:[C.jsx(M3,{type:"month"}),C.jsx(R3,{children:e("By Month")})]})]})]}),!i&&!a&&n?C.jsx(qV,{tasks:n}):C.jsx(eu,{})]})},Sze=k.lazy(()=>os(()=>import("./MainPage-fb8e6cef.js"),["assets/MainPage-fb8e6cef.js","assets/MainPage-f910fe1e.css"])),Eze=k.lazy(()=>os(()=>import("./ErrorPage-bbac0828.js"),[])),Oze=k.lazy(()=>os(()=>import("./LoginPage-cae67cd5.js"),["assets/LoginPage-cae67cd5.js","assets/VerifyForm-7cac0849.js","assets/AuthNavigate-4fd4e89f.js","assets/rocket3x-cffb2115.js"])),kze=k.lazy(()=>os(()=>import("./RegisterPage-e8dbddc8.js"),["assets/RegisterPage-e8dbddc8.js","assets/VerifyForm-7cac0849.js","assets/AuthNavigate-4fd4e89f.js"])),Tze=k.lazy(()=>os(()=>import("./ResetPwdPage-1f8bde11.js"),["assets/ResetPwdPage-1f8bde11.js","assets/AuthNavigate-4fd4e89f.js","assets/rocket3x-cffb2115.js"])),Pze=k.lazy(()=>os(()=>import("./ForgotPwdPage-976ae19b.js"),["assets/ForgotPwdPage-976ae19b.js","assets/AuthNavigate-4fd4e89f.js","assets/rocket3x-cffb2115.js"])),Cze=k.lazy(()=>os(()=>import("./ChoosedDay-a1085b39.js"),["assets/ChoosedDay-a1085b39.js","assets/ChoosedDay-0c976e4c.css"])),_ze=k.lazy(()=>os(()=>import("./ChoosedMonth-f89dccc9.js"),[]));function $ze(){const e=R4(),t=Bg().theme;return e&&ke.error(e.message),C.jsxs(Ene,{theme:t,children:[C.jsx(k.Suspense,{fallback:C.jsx(eu,{}),children:C.jsxs(nq,{children:[C.jsxs(Cr,{element:C.jsx(doe,{}),children:[C.jsx(Cr,{path:mr.mainPage,element:C.jsx(Sze,{isHomePage:!0})}),C.jsx(Cr,{path:mr.registerPage,element:C.jsx(kze,{})}),C.jsx(Cr,{path:mr.loginPage,element:C.jsx(Oze,{})}),C.jsx(Cr,{path:mr.forgotPassword,element:C.jsx(Pze,{})}),C.jsx(Cr,{path:mr.resetPassword,element:C.jsx(Tze,{})}),C.jsx(Cr,{path:mr.authGoogle,element:C.jsx(poe,{})})]}),C.jsx(Cr,{element:C.jsx(Pne,{}),children:C.jsxs(Cr,{path:mr.mainLayout,element:C.jsx(xbe,{}),children:[C.jsx(Cr,{path:mr.profilePage,element:C.jsx($we,{})}),C.jsxs(Cr,{path:mr.calendarPage,element:C.jsx(MEe,{}),children:[C.jsx(Cr,{path:mr.calendarMonth,element:C.jsx(_ze,{})}),C.jsx(Cr,{path:mr.calendarDay,element:C.jsx(Cze,{})})]}),C.jsx(Cr,{path:mr.statisticsPage,element:C.jsx(xze,{})})]})}),C.jsx(Cr,{path:"*",element:C.jsx(Eze,{})})]})}),C.jsx(lS,{hideProgressBar:!0,closeOnClick:!0,theme:t.toastify.theme}),C.jsx(Tne,{})]})}const{BASE_URL:Aze}={VITE_BACK_URL_PROD:"https://belka-s-mern-goose-track.onrender.com",BASE_URL:"/mern-goose-track/",MODE:"production",DEV:!1,PROD:!0,SSR:!1};Qx.createRoot(document.getElementById("root")).render(C.jsx(pH,{store:Qd,children:C.jsx(SF,{loading:null,persistor:wX,children:C.jsx(cq,{basename:Aze,children:C.jsx(PF,{children:C.jsx($ze,{})})})})}));export{pP as $,R4 as A,Fg as B,Ys as C,Qs as D,id as E,zze as F,Du as G,ch as H,dP as I,xF as J,Fze as K,f8 as L,mu as M,wF as N,Lze as O,J as P,jc as Q,D as R,u8 as S,$1e as T,No as U,Oe as V,tge as W,Ene as X,Xbe as Y,Qbe as Z,pq as _,R1e as a,bi as a0,Kbe as a1,Gbe as a2,ue as a3,fe as a4,Z0 as a5,t1e as a6,e1e as a7,eg as a8,bP as a9,Vae as aA,qi as aB,$S as aC,Ize as aa,jze as ab,gF as ac,ns as ad,co as ae,Nze as af,r1e as ag,W6 as ah,wT as ai,cP as aj,oh as ak,oa as al,Ie as am,$ce as an,o5 as ao,ss as ap,gn as aq,Sre as ar,Ae as as,wr as at,bK as au,Nne as av,u5 as aw,jne as ax,Gn as ay,zie as az,I1e as b,N1e as c,h8 as d,j1e as e,L1e as f,F1e as g,B1e as h,U1e as i,C as j,k,yM as l,Rze as m,eu as n,Vze as o,s8 as p,X0e as q,mr as r,q as s,ee as t,zt as u,Xp as v,Bg as w,lh as x,is as y,M4 as z};
+`,xze=()=>{const{t:e}=zt(),[t,r]=k.useState(gn(new Date,"yyyy-MM-dd")),{data:n,isLoading:i,isFetching:a}=bK({year:Ae(new Date(t)),month:wr(new Date(t))+1,day:MS(new Date(t))}),o=()=>{const u=IT(new Date(t),1);r(gn(new Date(u),"yyyy-MM-dd"))},s=()=>{const u=ss(new Date(t),1);r(gn(new Date(u),"yyyy-MM-dd"))};return C.jsxs(yze,{children:[C.jsxs(bze,{children:[C.jsx(GP,{prevHandler:o,nextHandler:s,type:"day",date:t,setCurrentDate:r}),C.jsxs(wze,{children:[C.jsxs(D3,{children:[C.jsx(M3,{type:"day"}),C.jsx(R3,{children:e("By Day")})]}),C.jsxs(D3,{children:[C.jsx(M3,{type:"month"}),C.jsx(R3,{children:e("By Month")})]})]})]}),!i&&!a&&n?C.jsx(qV,{tasks:n}):C.jsx(eu,{})]})},Sze=k.lazy(()=>os(()=>import("./MainPage-bc1653f7.js"),["assets/MainPage-bc1653f7.js","assets/MainPage-f910fe1e.css"])),Eze=k.lazy(()=>os(()=>import("./ErrorPage-48656f23.js"),[])),Oze=k.lazy(()=>os(()=>import("./LoginPage-ab08b05c.js"),["assets/LoginPage-ab08b05c.js","assets/VerifyForm-5e4ef861.js","assets/AuthNavigate-6a742f59.js","assets/rocket3x-cffb2115.js"])),kze=k.lazy(()=>os(()=>import("./RegisterPage-513e402f.js"),["assets/RegisterPage-513e402f.js","assets/VerifyForm-5e4ef861.js","assets/AuthNavigate-6a742f59.js"])),Tze=k.lazy(()=>os(()=>import("./ResetPwdPage-077e7cd7.js"),["assets/ResetPwdPage-077e7cd7.js","assets/AuthNavigate-6a742f59.js","assets/rocket3x-cffb2115.js"])),Pze=k.lazy(()=>os(()=>import("./ForgotPwdPage-9496ffdb.js"),["assets/ForgotPwdPage-9496ffdb.js","assets/AuthNavigate-6a742f59.js","assets/rocket3x-cffb2115.js"])),Cze=k.lazy(()=>os(()=>import("./ChoosedDay-2ffde890.js"),["assets/ChoosedDay-2ffde890.js","assets/ChoosedDay-0c976e4c.css"])),_ze=k.lazy(()=>os(()=>import("./ChoosedMonth-b88e5c87.js"),[]));function $ze(){const e=R4(),t=Bg().theme;return e&&ke.error(e.message),C.jsxs(Ene,{theme:t,children:[C.jsx(k.Suspense,{fallback:C.jsx(eu,{}),children:C.jsxs(nq,{children:[C.jsxs(Cr,{element:C.jsx(doe,{}),children:[C.jsx(Cr,{path:mr.mainPage,element:C.jsx(Sze,{isHomePage:!0})}),C.jsx(Cr,{path:mr.registerPage,element:C.jsx(kze,{})}),C.jsx(Cr,{path:mr.loginPage,element:C.jsx(Oze,{})}),C.jsx(Cr,{path:mr.forgotPassword,element:C.jsx(Pze,{})}),C.jsx(Cr,{path:mr.resetPassword,element:C.jsx(Tze,{})}),C.jsx(Cr,{path:mr.authGoogle,element:C.jsx(poe,{})})]}),C.jsx(Cr,{element:C.jsx(Pne,{}),children:C.jsxs(Cr,{path:mr.mainLayout,element:C.jsx(xbe,{}),children:[C.jsx(Cr,{path:mr.profilePage,element:C.jsx($we,{})}),C.jsxs(Cr,{path:mr.calendarPage,element:C.jsx(MEe,{}),children:[C.jsx(Cr,{path:mr.calendarMonth,element:C.jsx(_ze,{})}),C.jsx(Cr,{path:mr.calendarDay,element:C.jsx(Cze,{})})]}),C.jsx(Cr,{path:mr.statisticsPage,element:C.jsx(xze,{})})]})}),C.jsx(Cr,{path:"*",element:C.jsx(Eze,{})})]})}),C.jsx(lS,{hideProgressBar:!0,closeOnClick:!0,theme:t.toastify.theme}),C.jsx(Tne,{})]})}const{BASE_URL:Aze}={VITE_BACK_URL_PROD:"https://belka-s-mern-goose-track.onrender.com",BASE_URL:"/mern-goose-track/",MODE:"production",DEV:!1,PROD:!0,SSR:!1};Qx.createRoot(document.getElementById("root")).render(C.jsx(pH,{store:Qd,children:C.jsx(SF,{loading:null,persistor:wX,children:C.jsx(cq,{basename:Aze,children:C.jsx(PF,{children:C.jsx($ze,{})})})})}));export{pP as $,R4 as A,Fg as B,Ys as C,Qs as D,id as E,zze as F,Du as G,ch as H,dP as I,xF as J,Fze as K,f8 as L,mu as M,wF as N,Lze as O,J as P,jc as Q,D as R,u8 as S,$1e as T,No as U,Oe as V,tge as W,Ene as X,Xbe as Y,Qbe as Z,pq as _,R1e as a,bi as a0,Kbe as a1,Gbe as a2,ue as a3,fe as a4,Z0 as a5,t1e as a6,e1e as a7,eg as a8,bP as a9,Vae as aA,qi as aB,$S as aC,Ize as aa,jze as ab,gF as ac,ns as ad,co as ae,Nze as af,r1e as ag,W6 as ah,wT as ai,cP as aj,oh as ak,oa as al,Ie as am,$ce as an,o5 as ao,ss as ap,gn as aq,Sre as ar,Ae as as,wr as at,bK as au,Nne as av,u5 as aw,jne as ax,Gn as ay,zie as az,I1e as b,N1e as c,h8 as d,j1e as e,L1e as f,F1e as g,B1e as h,U1e as i,C as j,k,yM as l,Rze as m,eu as n,Vze as o,s8 as p,X0e as q,mr as r,q as s,ee as t,zt as u,Xp as v,Bg as w,lh as x,is as y,M4 as z};
