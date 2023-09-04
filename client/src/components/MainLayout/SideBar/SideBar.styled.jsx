@@ -48,11 +48,13 @@ export const SideBarContainer = styled.aside`
   }
 `;
 export const SideBarHeading = styled.h3`
+  margin-right: 20px;
   font-size: 16px;
 
   color: ${({ theme }) => theme.colors.activeUserNavItem};
 
-  @media screen and (${themes.breakpoints.s} < width <=${themes.breakpoints.m}) {
+  @media screen and (width <=${themes.breakpoints.m}) {
+    margin-right: 0;
     font-size: 14px;
   }
 `;

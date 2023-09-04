@@ -22,8 +22,7 @@ export const FormInputContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (${themes.breakpoints.m} <= width < ${themes.breakpoints.l}) {
-  }
+  width: 100%;
 
   @media screen and (${themes.breakpoints.l} <= width) {
     flex-direction: row;
@@ -48,7 +47,7 @@ export const FormBtn = styled.button`
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  margin-top: 0px;
+  margin-top: 20px;
   border-radius: 16px;
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.accent};

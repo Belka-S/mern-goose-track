@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import { Field, ErrorMessage as FormikErrorMessage } from 'formik';
 import { themes } from 'styles/variables/themes';
 
+export const Label = styled.label`
+  @media screen and (${themes.breakpoints.s} <= width) {
+    margin: 0 auto;
+  }
+`;
+
 export const FormLabelSpan = styled.span`
   display: flex;
   margin-bottom: 8px;
@@ -10,9 +16,9 @@ export const FormLabelSpan = styled.span`
 `;
 
 export const InputField = styled(Field)`
-  height: 20px;
   width: 100%;
 
+  height: 36px;
   font-size: 14px;
   line-height: 1.29;
   font-weight: 600;
@@ -39,7 +45,7 @@ export const InputField = styled(Field)`
   }
 
   @media screen and (${themes.breakpoints.s} <= width < ${themes.breakpoints.m}) {
-    width: 299px;
+    width: 280px;
     height: 42px;
   }
 

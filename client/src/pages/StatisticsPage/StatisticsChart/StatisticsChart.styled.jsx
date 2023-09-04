@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const ChartContainer = styled.div`
+  outline: 1px solid tomato;
+
   position: relative;
   width: 860px;
   height: 440px;
   border-radius: 20px;
-  margin: 0 auto; /* Додаємо автоматичний відступ по боках для вирівнювання по центру */
-
+  margin: 0 auto;
   border: 0.8px solid ${({ theme }) => theme.colors.statisticsBgLines};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
     width: 100%;
-    /* height: auto; */
   }
 `;
 

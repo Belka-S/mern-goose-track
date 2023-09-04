@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 
-import { FormLabelSpan, InputField, ErrorMessage } from './UniversalInput.styled';
+import { Label, FormLabelSpan, InputField, ErrorMessage } from './UniversalInput.styled';
 
 export default function UniversalInput({ label, type, name, placeholder }) {
   return (
-    <label htmlFor={name}>
+    <Label htmlFor={name}>
       <FormLabelSpan>{label}</FormLabelSpan>
       <InputField id={name} type={type} name={name} placeholder={placeholder} />
       <ErrorMessage name={name} component="div" />
-    </label>
+    </Label>
   );
 }
 

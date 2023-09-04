@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { themes } from 'styles/variables/themes';
 
 export const DeleteProfileBtn = styled.button`
+  width: 100%;
+  height: 36px;
   display: block;
   margin-left: auto;
   font-size: 14px;
@@ -31,7 +33,7 @@ export const DeleteProfileBtn = styled.button`
   }
 
   @media screen and (${themes.breakpoints.s} <= width < ${themes.breakpoints.m}) {
-    width: 299px;
+    width: 280px;
     height: 42px;
     margin-top: 20px;
   }
