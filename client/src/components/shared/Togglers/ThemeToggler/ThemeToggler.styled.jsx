@@ -27,11 +27,10 @@ export const IconLight = styled(FiSun)`
   align-items: center;
   width: 24px;
   height: 24px;
-  margin-right: 8px;
-  color: ${({ theme }) => theme.colors.darkBlue};
+  color: ${({ theme }) => theme.colors.white};
   @media ${device.tablet} {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
   }
 `;
 
@@ -41,10 +40,10 @@ export const IconDark = styled(FaRegMoon)`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 8px;
+
   color: ${({ theme }) => theme.colors.darkBlue};
   @media ${device.tablet} {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
   }
 `;

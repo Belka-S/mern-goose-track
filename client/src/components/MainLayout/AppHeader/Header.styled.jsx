@@ -35,13 +35,6 @@ export const LoactionSign = styled.h2`
   }
 `;
 
-export const WrapTogglers = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-right: 15px;
-`;
-
 export const Go = styled.span`
   color: #3e85f3;
   font-family: Inter;

@@ -6,8 +6,11 @@ import { device } from 'styles/variables/mediaVeriables';
 
 export const StyledTogglerWrapper = styled.div`
   position: absolute;
-  top: 10%;
+  top: 7%;
   right: 5%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 `;
 
 export const MainWrapper = styled.main`

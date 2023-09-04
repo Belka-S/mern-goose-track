@@ -48,14 +48,14 @@ export const CellWrapper = styled(NavLink)`
   cursor: pointer;
 
   @media screen and (min-width: ${themes.breakpoints.m}) {
-    height: 144px;
+    height: 100px;
     font-size: ${themes.fontSizes.m};
     line-height: 1.12;
     padding-top: 41px;
   }
 
   @media screen and (min-width: ${themes.breakpoints.l}) {
-    height: 125px;
+    height: 110px;
   }
 `;
 

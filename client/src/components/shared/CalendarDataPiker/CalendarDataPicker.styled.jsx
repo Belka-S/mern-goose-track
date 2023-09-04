@@ -1,14 +1,18 @@
 import { createGlobalStyle, styled } from 'styled-components';
+
+import { themes } from 'styles/variables/themes';
+
 export const DataBtn = styled.div`
   padding: 6px 12px;
   color: #ffffff;
-  background: #3e85f3;
+  background-color: ${themes.colors.accent};
   border-radius: 8px;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+
   @media screen and (min-width: 768px) {
     margin-top: 33px;
     margin-bottom: 33px;
@@ -16,8 +20,9 @@ export const DataBtn = styled.div`
     font-size: 16px;
   }
 `;
+
 export const CalendarGlobalStyles = createGlobalStyle`
-  .react-datepicker__wrapper {
+.react-datepicker__wrapper {
     position: relative;
   }
   .react-datepicker {
@@ -160,5 +165,4 @@ export const CalendarGlobalStyles = createGlobalStyle`
   }
   .react-datepicker__triangle {
     visibility: hidden;
-  }
-`;
+  }`;

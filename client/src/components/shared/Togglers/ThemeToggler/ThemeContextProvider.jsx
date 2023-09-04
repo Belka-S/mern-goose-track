@@ -2,15 +2,13 @@ import { createContext, useState, useEffect, useContext } from 'react';
 
 import PropTypes from 'prop-types';
 
-import { themes, dark } from '../../../styles/variables/themes';
+import { themes, dark } from '../../../../styles/variables/themes';
 
 export const ThemeContext = createContext();
 export const useThemeColors = () => useContext(ThemeContext);
 
 const ThemeContextProvider = ({ children }) => {
-  const [type, setType] = useState(
-    () => window.localStorage.getItem('theme') ?? 'light'
-  );
+  const [type, setType] = useState(() => window.localStorage.getItem('theme') ?? 'light');
   const [theme, setTheme] = useState(themes);
 
   useEffect(() => {
@@ -31,9 +29,7 @@ const ThemeContextProvider = ({ children }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, type, changeTheme }}>
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ theme, type, changeTheme }}>{children}</ThemeContext.Provider>
   );
 };
 

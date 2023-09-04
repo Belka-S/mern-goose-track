@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import routes from 'components/routes.js';
 import { CgLogIn } from 'react-icons/cg';
-import LangToggler from 'components/shared/LangToggler/LangToggler';
+import LangToggler from 'components/shared/Togglers/LangToggler/LangToggler';
+import ThemeToggler from 'components/shared/Togglers/ThemeToggler/ThemeToggler';
 import logoMobile from 'images/others/mobile/goose1x.png';
 
 import logoMobile2x from 'images/others/mobile/goose2x.png';
@@ -31,7 +32,8 @@ export default function AuthSection({ isHomePage }) {
   return (
     <StyledHero>
       <StyledTogglerWrapper>
-        <LangToggler isHomePage={!isHomePage} />
+        <ThemeToggler />
+        <LangToggler isHomePage={isHomePage} />
       </StyledTogglerWrapper>
       <StyledImg>
         <source

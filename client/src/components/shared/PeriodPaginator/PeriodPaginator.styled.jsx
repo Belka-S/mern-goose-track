@@ -6,6 +6,7 @@ export const DivWrapper = styled('div')`
   position: relative;
   align-items: center;
   justify-content: space-between;
+
   @media screen and (max-width: 768px) {
     width: 100%;
   }

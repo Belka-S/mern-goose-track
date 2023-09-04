@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { themes } from '../../../styles/variables/themes';
+import { themes } from 'styles/variables/themes';
 
 export const Container = styled.div`
   display: flex;
@@ -9,12 +9,14 @@ export const Container = styled.div`
 `;
 
 export const FlagBtn = styled.button`
+  margin-top: 3px;
   position: relative;
   border-radius: 8px;
   transform: scale(1);
   transition-property: transform;
   transition-duration: ${themes.animations.duration};
   transition-timing-function: ${themes.animations.cubicBezier};
+
   &:hover,
   &:focus {
     transform: scale(1.02);

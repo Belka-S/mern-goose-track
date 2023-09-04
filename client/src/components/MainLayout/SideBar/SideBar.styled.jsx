@@ -46,16 +46,13 @@ export const SideBarContainer = styled.aside`
     transform: none;
     transition: none;
   }
-  /* @media screen and (${themes.breakpoints.l} <= width) {
-    left: -32px;
-  } */
 `;
 export const SideBarHeading = styled.h3`
-  font-size: 12px;
-  margin-bottom: 24px;
-  color: ${({ theme }) => theme.colors.labelInForm};
+  font-size: 16px;
+
+  color: ${({ theme }) => theme.colors.activeUserNavItem};
+
   @media screen and (${themes.breakpoints.s} < width <=${themes.breakpoints.m}) {
     font-size: 14px;
-    margin-bottom: 32px;
   }
 `;

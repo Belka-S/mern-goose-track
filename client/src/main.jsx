@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 
 import { PersistGate } from 'redux-persist/integration/react';
 
-import ThemeContextProvider from 'components/MainLayout/ThemeToggler/ThemeContextProvider';
+import ThemeContextProvider from 'components/shared/Togglers/ThemeToggler/ThemeContextProvider';
 import { store, persistor } from 'store/store';
 
 import './utils/internationalization/i18next';

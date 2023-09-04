@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import gooseRocketMobile from 'images/others/mobile/gooseRocketMobile.svg';
 import gooseRocketTablet from 'images/others/tablet/gooseRocketTablet.svg';
 
-import { useThemeColors } from 'components/MainLayout/ThemeToggler/ThemeContextProvider';
+import { useThemeColors } from 'components/shared/Togglers/ThemeToggler/ThemeContextProvider';
 import { ThemeProvider } from 'styled-components';
 
 import { ErrorPageStyles, ErrorCode, Text, HomeBtn, IconWrapper } from './ErrorPage.styled';

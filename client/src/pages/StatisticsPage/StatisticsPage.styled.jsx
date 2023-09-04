@@ -5,23 +5,13 @@ export const StatisticsPageStyles = styled.div`
   height: 100%;
   background: ${({ theme }) => theme.colors.backgroundUserForm};
   border-radius: 16px;
-  padding-top: 28px;
-  padding-right: 14px;
-  padding-bottom: 14px;
-  /* padding-bottom: 135px; */
-  padding-left: 14px;
+  padding: 14px;
 
   @media screen and (width >= ${themes.breakpoints.m}) {
-    padding-top: 132px;
-    padding-right: 33px;
-    padding-bottom: 33px;
-    padding-left: 33px;
+    padding: 30px;
   }
   @media screen and (width >= ${themes.breakpoints.l}) {
-    padding-top: 134px;
-    padding-right: 114px;
-    /* padding-bottom: 104px; */
-    padding-left: 114px;
+    padding: 50px;
   }
 `;
 
