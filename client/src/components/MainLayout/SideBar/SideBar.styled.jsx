@@ -47,14 +47,14 @@ export const SideBarContainer = styled.aside`
     transition: none;
   }
 `;
+
 export const SideBarHeading = styled.h3`
-  margin-right: 20px;
-  font-size: 16px;
+  font-size: 14px;
 
   color: ${({ theme }) => theme.colors.activeUserNavItem};
 
-  @media screen and (width <=${themes.breakpoints.m}) {
-    margin-right: 0;
-    font-size: 14px;
+  @media screen and (${themes.breakpoints.m} < width) {
+    margin-right: 20px;
+    font-size: 16px;
   }
 `;
