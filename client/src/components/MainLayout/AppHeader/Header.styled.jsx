@@ -10,7 +10,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: t;
   align-items: center;
-  margin-bottom: 95px;
+  margin-bottom: 45px;
   padding-top: 24px;
 
   @media screen and (${themes.breakpoints.s} < width) {

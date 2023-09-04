@@ -8,8 +8,7 @@ export const StyledTogglerWrapper = styled.div`
   position: absolute;
   top: 7%;
   right: 5%;
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   gap: 15px;
 `;
 

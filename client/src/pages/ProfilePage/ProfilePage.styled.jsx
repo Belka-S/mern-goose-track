@@ -19,13 +19,17 @@ export const ProfilePageWrap = styled.div`
 
 export const BtnWrapper = styled.div`
   display: flex;
-
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 16px 50px;
+
   width: 100%;
 
-  @media screen and (width <= ${themes.breakpoints.m}) {
-    flex-direction: column;
-    align-items: center;
+  @media screen and (${themes.breakpoints.l} <= width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 758px;
+    position: relative;
   }
 `;
