@@ -10,9 +10,6 @@ export default function UserInfo() {
 
   return (
     <UserInfoStyles>
-      <UserName>
-        {screenWidthIsMobile && name.length > 7 ? `${name.slice(0, 3)}...` : name.split(' ')[0]}
-      </UserName>
       {avatarUrl ? (
         <Avatar
           alt="username"
@@ -24,6 +21,9 @@ export default function UserInfo() {
           {name.split('')[0]}
         </Avatar>
       )}
+      <UserName>
+        {screenWidthIsMobile && name.length > 7 ? `${name.slice(0, 3)}...` : name.split(' ')[0]}
+      </UserName>
     </UserInfoStyles>
   );
 }

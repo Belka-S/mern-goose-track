@@ -14,43 +14,21 @@ export const UserNameTitle = styled.h3`
   color: ${({ theme }) => theme.colors.textCancelBtn};
 
   @media screen and (${themes.breakpoints.m} <= width) {
-    margin-bottom: 6px;
-  }
-`;
-
-export const RoleTitle = styled.p`
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.17;
-  letter-spacing: -0.02em;
-  margin-bottom: 6px;
-  color: ${({ theme }) => theme.colors.placeholder};
-
-  @media screen and (${themes.breakpoints.m} <= width) {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-  }
-
-  @media screen and (${themes.breakpoints.l} <= width) {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
   }
 `;
 
 export const FormInputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
 
   @media screen and (${themes.breakpoints.m} <= width < ${themes.breakpoints.l}) {
-    gap: 12px;
   }
 
   @media screen and (${themes.breakpoints.l} <= width) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px 50px;
+    gap: 0 50px;
     width: 758px;
     position: relative;
   }
@@ -70,8 +48,7 @@ export const FormBtn = styled.button`
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 0px;
   border-radius: 16px;
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.accent};
@@ -95,6 +72,7 @@ export const FormBtn = styled.button`
   @media screen and (${themes.breakpoints.m} <= width) {
     width: 262px;
     height: 48px;
-    margin-top: 30px;
+    margin-top: 40px;
+    font-size: 16px;
   }
 `;

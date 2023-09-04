@@ -25,18 +25,15 @@ export default function ProfilePage() {
   };
 
   return (
-    <ProfilePageWrap>
-      <UserForm
-        callBack={callBack}
-        callbackEmail={callbackEmail}
-        callbackPassword={callbackPassword}
-        callbackDeleteUser={callbackDeleteUser}
-      />
-      <BtnWrapper>
-        <ChangeEmailModal callbackEmail={callbackEmail} />
-        <ChangePasswordModal callbackPassword={callbackPassword} />
-        <DeleteProfileModal callbackDeleteUser={callbackDeleteUser} />
-      </BtnWrapper>
-    </ProfilePageWrap>
+    <>
+      <ProfilePageWrap>
+        <UserForm
+          callBack={callBack}
+          callbackEmail={callbackEmail}
+          callbackPassword={callbackPassword}
+        />
+      </ProfilePageWrap>
+      <DeleteProfileModal callbackDeleteUser={callbackDeleteUser} />
+    </>
   );
 }

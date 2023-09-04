@@ -14,19 +14,25 @@ export const InputField = styled(Field)`
   line-height: 1.29;
   font-weight: 600;
   letter-spacing: -0.02em;
-  width: 199px;
-  height: 36px;
-  color: ${({ theme }) => theme.colors.textCancelBtn};
   border-width: 1px;
   border-style: solid;
+  color: ${({ theme }) => theme.colors.textCancelBtn};
   border-color: ${({ theme }) => theme.colors.borderInputUserForm};
   border-radius: 8px;
   padding: 0 18px;
   margin-bottom: 8px;
-  background: transparent;
+  background: ${({ theme }) => theme.colors.backgroundUserForm};
 
   &:hover {
     border: 1px solid black;
+  }
+
+  &.input-error {
+    border: 1px solid ${themes.colors.failed};
+  }
+
+  &.input-correct {
+    border: 1px solid ${themes.colors.saccess};
   }
 
   @media screen and (${themes.breakpoints.s} <= width < ${themes.breakpoints.m}) {
@@ -42,26 +48,6 @@ export const InputField = styled(Field)`
     border-radius: 8px;
     padding: 0 18px;
     margin-bottom: 8px;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  &::placeholder {
-    color: ${({ theme }) => theme.colors.placeholder};
-  }
-
-  &:hover::placeholder {
-    color: ${({ theme }) => theme.colors.placeholder};
-  }
-
-  &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px ${({ theme }) => theme.colors.backgroundUserForm} inset !important;
-  }
-
-  &:-webkit-autofill::first-line {
-    color: ${({ theme }) => theme.colors.textCancelBtn} !important;
   }
 `;
 

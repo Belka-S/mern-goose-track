@@ -7,11 +7,16 @@ import { useUser } from 'store/selectors';
 import UniversalInput from 'components/Forms/UniversalInput/UniversalInput';
 import AccountAvatar from 'components/Forms/ProfileForm/UserAvatar/UserAvatar';
 
+import ChangeEmailModal from 'components/ChangeEmailModal/ChangeEmailModal';
+import ChangePasswordModal from 'components/ChangePasswordModal/ChangePasswordModal';
+
+import { BtnWrapper } from 'pages/ProfilePage/ProfilePage.styled';
+
 import { validationAvatarRules, validationUserFormRules } from '../accountValidationRules';
 
-import { FormWrap, UserNameTitle, RoleTitle, FormInputContainer, FormBtn } from './UserForm.styled';
+import { FormWrap, UserNameTitle, FormInputContainer, FormBtn } from './UserForm.styled';
 
-export default function UserForm({ callBack }) {
+export default function UserForm({ callBack, callbackEmail, callbackPassword }) {
   const { t } = useTranslation();
   const user = useUser();
 
@@ -62,8 +67,14 @@ export default function UserForm({ callBack }) {
                   setSelectedAvatar={setSelectedAvatar}
                   setImagePreview={setImagePreview}
                 />
-                <RoleTitle>{t('User')}</RoleTitle>
+
                 <UserNameTitle>{user.email}</UserNameTitle>
+
+                <BtnWrapper>
+                  <ChangeEmailModal callbackEmail={callbackEmail} />
+                  <ChangePasswordModal callbackPassword={callbackPassword} />
+                </BtnWrapper>
+
                 <FormInputContainer>
                   <UniversalInput
                     label={t('UserName')}
@@ -82,15 +93,16 @@ export default function UserForm({ callBack }) {
                     type="tel"
                     name="phone"
                     pattern="\(\d{3}\) \d{3}-\d{4}"
-                    placeholder="+380971234567"
+                    placeholder={t('Add Phone number')}
                   />
                   <UniversalInput
                     label={t('Skype')}
                     type="text"
                     name="skype"
-                    placeholder={t('Add a skype number')}
+                    placeholder={t('Add Skype number')}
                   />
                 </FormInputContainer>
+
                 <FormBtn
                   type="submit"
                   disabled={
@@ -110,5 +122,7 @@ export default function UserForm({ callBack }) {
 }
 
 UserForm.propTypes = {
-  callBack: PropTypes.func.isRequired
+  callBack: PropTypes.func.isRequired,
+  callbackEmail: PropTypes.func.isRequired,
+  callbackPassword: PropTypes.func.isRequired
 };

@@ -2,15 +2,8 @@ import styled from 'styled-components';
 
 import { themes } from 'styles/variables/themes';
 
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 export const FlagBtn = styled.button`
   margin-top: 3px;
-  position: relative;
   border-radius: 8px;
   transform: scale(1);
   transition-property: transform;

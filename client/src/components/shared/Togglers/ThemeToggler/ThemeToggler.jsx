@@ -1,4 +1,4 @@
-import { ThemeTogglerStyles, ToggleThemeBtn, IconLight, IconDark } from './ThemeToggler.styled';
+import { ToggleThemeBtn, IconLight, IconDark } from './ThemeToggler.styled';
 import { useThemeColors } from './ThemeContextProvider';
 
 const ThemeToggler = () => {
@@ -9,11 +9,11 @@ const ThemeToggler = () => {
   };
   const type = useThemeColors().type;
   return (
-    <ThemeTogglerStyles>
+    <>
       <ToggleThemeBtn onClick={handlerChangeTheme}>
         {type === 'dark' ? <IconLight /> : <IconDark />}
       </ToggleThemeBtn>
-    </ThemeTogglerStyles>
+    </>
   );
 };
 

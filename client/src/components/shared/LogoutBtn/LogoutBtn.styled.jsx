@@ -6,7 +6,8 @@ export const LogOutBtn = styled.button`
   font-weight: 600;
   line-height: 1.3;
   margin-left: 10px;
-  padding: 8px 9px;
+  display: flex;
+  padding: 6.6px 20px;
   border-radius: 8px;
 
   cursor: pointer;
@@ -19,10 +20,6 @@ export const LogOutBtn = styled.button`
   text-shadow: 0px 47px 355px rgba(0, 0, 0, 0.07), 0px 9.4px 57.6875px rgba(0, 0, 0, 0.035);
   box-shadow: 4px 2px 16px 0px rgba(136, 165, 191, 0.3);
   color: ${({ theme }) => theme.colors.white};
-
-  display: flex;
-  padding: 8px 20px;
-  border-radius: 8px;
 
   background-color: ${themes.colors.accent};
 

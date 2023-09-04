@@ -9,11 +9,11 @@ export const ProfilePageWrap = styled.div`
   background: ${({ theme }) => theme.colors.backgroundUserForm};
 
   @media screen and (${themes.breakpoints.m} <= width < ${themes.breakpoints.l}) {
-    padding: 20px 80px 20px 80px;
+    padding: 40px 80px;
   }
 
   @media screen and (${themes.breakpoints.l} <= width) {
-    padding: 30px 100px 30px 100px;
+    padding: 50px 100px;
   }
 `;
 
@@ -22,12 +22,12 @@ export const BtnWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 16px 50px;
 
   @media screen and (${themes.breakpoints.l} <= width) {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
   }
 `;

@@ -2,31 +2,47 @@ import styled from 'styled-components';
 import { themes } from 'styles/variables/themes';
 
 export const DeleteProfileBtn = styled.button`
-  width: 195px;
-  height: 46px;
-  font-family: Inter;
+  display: block;
+  margin-left: auto;
   font-size: 14px;
-  font-weight: 600;
   line-height: 1.29;
+  font-weight: 600;
   letter-spacing: -0.02em;
-  border-radius: 16px;
-  color: white; //  color: ${({ theme }) => theme.colors.white};
-  background-color: #fad91b;
-  text-shadow: 0px 47px 355px rgba(0, 0, 0, 0.07), 0px 9.4px 57.6875px rgba(0, 0, 0, 0.035);
+  border-width: 1px;
+  border-style: solid;
+  color: ${({ theme }) => theme.colors.textCancelBtn};
+  border-color: ${({ theme }) => theme.colors.borderInputUserForm};
+  border-radius: 8px;
+  padding: 0 18px;
+  margin-top: 8px;
 
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0, 0.11, 0.35, 2);
+  background: ${({ theme }) => theme.colors.backgroundUserForm};
 
-  &:hover,
-  &:focus {
-    background-color: #bb0202;
-    transform: scale(1.02);
+  &:hover {
+    border: 1px solid black;
+  }
+
+  &.input-error {
+    border: 1px solid ${themes.colors.failed};
+  }
+
+  &.input-correct {
+    border: 1px solid ${themes.colors.saccess};
+  }
+
+  @media screen and (${themes.breakpoints.s} <= width < ${themes.breakpoints.m}) {
+    width: 299px;
+    height: 42px;
+    margin-top: 20px;
   }
 
   @media screen and (${themes.breakpoints.m} <= width) {
-    width: 262px;
-    height: 48px;
+    font-size: 16px;
+    line-height: 1.13;
+    width: 354px;
+    height: 46px;
+    border-radius: 8px;
+    padding: 0 18px;
+    margin-top: 30px;
   }
 `;

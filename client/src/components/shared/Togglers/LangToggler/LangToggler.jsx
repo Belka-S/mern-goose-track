@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 
 import '/node_modules/flag-icons/css/flag-icons.min.css';
-import { Container, FlagBtn, Label } from './LangToggler.styled';
+import { FlagBtn, Label } from './LangToggler.styled';
 
 export default function LangToggler({ isHomePage }) {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -24,7 +24,7 @@ export default function LangToggler({ isHomePage }) {
   const currentLanguage = localStorage.getItem('i18nextLng') || 'en';
 
   return (
-    <Container>
+    <>
       {currentLanguage === 'uk' ? (
         <FlagBtn type="button" onClick={handleLangChange} value="gb">
           <span className={isHomePage ? 'circular-flag square-flag' : 'circular-flag'}>
@@ -40,7 +40,7 @@ export default function LangToggler({ isHomePage }) {
           <Label>EN</Label>
         </FlagBtn>
       )}
-    </Container>
+    </>
   );
 }
 

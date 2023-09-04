@@ -4,17 +4,13 @@ import { FaRegMoon } from 'react-icons/fa';
 
 import { device } from 'styles/variables/mediaVeriables';
 
-export const ThemeTogglerStyles = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
 export const ToggleThemeBtn = styled.button`
   transform: scale(1);
   transition-property: transform;
   transition-duration: ${({ theme }) => theme.animations.duration};
   transition-timing-function: ${({ theme }) => theme.animations.cubicBezier};
   color: ${({ theme }) => theme.colors.acent};
+
   &:hover,
   &:focus {
     transform: scale(1.02);
