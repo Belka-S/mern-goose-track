@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { themes } from 'styles/variables/themes';
 
 export const ChangeValueBtn = styled.button`
+  height: 20px;
+  width: 100%;
   font-size: 14px;
   line-height: 1.29;
   font-weight: 600;

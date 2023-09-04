@@ -108,7 +108,7 @@ export const AuthLink = styled(NavLink)`
   padding: 14px 32px;
   border-radius: 16px;
   font-weight: 600;
-  font-size: ${({ colorbtn }) => (colorbtn === 'white' ? themes.fontSizes.s : themes.fontSizes.xs)};
+  font-size: ${({ colorbtn }) => (colorbtn === 'white' ? themes.fontSizes.xs : themes.fontSizes.s)};
   line-height: 1.3;
   letter-spacing: -0.02em;
   cursor: pointer;
@@ -132,7 +132,7 @@ export const AuthLink = styled(NavLink)`
   }
   @media ${device.tablet} {
     font-size: ${({ colorbtn }) =>
-      colorbtn === 'white' ? themes.fontSizes.s : themes.fontSizes.l};
+      colorbtn === 'white' ? themes.fontSizes.m : themes.fontSizes.l};
     line-height: 1.3;
     padding: 14px 22px;
   }

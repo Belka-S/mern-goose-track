@@ -10,7 +10,7 @@ export const FormWrap = styled.div`
 
 export const UserNameTitle = styled.h3`
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   color: ${({ theme }) => theme.colors.textCancelBtn};
 
   @media screen and (${themes.breakpoints.m} <= width) {
