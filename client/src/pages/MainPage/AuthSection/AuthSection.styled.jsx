@@ -10,6 +10,7 @@ export const StyledTogglerWrapper = styled.div`
   right: 5%;
   display: inline-flex;
   gap: 15px;
+  height: 30px;
 `;
 
 export const MainWrapper = styled.main`
@@ -56,6 +57,9 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroTitleSpan = styled.span`
+  padding-right: 1px;
+  margin-left: -2.5px;
+
   font-family: 'Coolvetica';
   font-style: italic;
   font-size: ${themes.fontSizes.logoMobile};
@@ -64,6 +68,8 @@ export const HeroTitleSpan = styled.span`
   text-shadow: ${themes.shadows.authHeading};
 
   @media (min-width: 768px) {
+    padding-right: 3px;
+    margin-left: -6px;
     font-size: ${themes.fontSizes.logo};
     line-height: 1.25;
   }

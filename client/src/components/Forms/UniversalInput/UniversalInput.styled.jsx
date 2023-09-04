@@ -3,6 +3,7 @@ import { Field, ErrorMessage as FormikErrorMessage } from 'formik';
 import { themes } from 'styles/variables/themes';
 
 export const Label = styled.label`
+  width: 100%;
   @media screen and (${themes.breakpoints.s} <= width) {
     margin: 0 auto;
   }
@@ -18,7 +19,6 @@ export const FormLabelSpan = styled.span`
 export const InputField = styled(Field)`
   width: 100%;
   display: flex;
-  flex-grow: 1;
 
   height: 36px;
   font-size: 14px;

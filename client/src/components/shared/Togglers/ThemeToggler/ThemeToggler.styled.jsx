@@ -21,25 +21,17 @@ export const IconLight = styled(FiSun)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   color: ${({ theme }) => theme.colors.white};
-  @media ${device.tablet} {
-    width: 30px;
-    height: 30px;
-  }
 `;
 
 export const IconDark = styled(FaRegMoon)`
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   color: ${({ theme }) => theme.colors.darkBlue};
-  @media ${device.tablet} {
-    width: 30px;
-    height: 30px;
-  }
 `;

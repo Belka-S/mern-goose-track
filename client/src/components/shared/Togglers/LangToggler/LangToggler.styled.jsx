@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { themes } from 'styles/variables/themes';
 
 export const FlagBtn = styled.button`
-  margin-top: 3px;
+  margin-top: 2px;
   border-radius: 8px;
   transform: scale(1);
   transition-property: transform;
