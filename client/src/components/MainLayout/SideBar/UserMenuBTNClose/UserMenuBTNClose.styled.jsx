@@ -4,12 +4,12 @@ import { themes } from 'styles/variables/themes';
 
 export const SideBarBtnClose = styled.button`
   position: absolute;
-  top: 36px;
-  right: 26px;
+  top: 24px;
+  right: 20px;
 
   @media screen and (width >= ${themes.breakpoints.m}) {
-    top: 30px;
-    right: 20px;
+    top: 32px;
+    right: 32px;
   }
 `;
 export const IoCloseIcon = styled(IoClose)`
