@@ -1,18 +1,10 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { createApi } from '@reduxjs/toolkit/query/react';
 
-const { DEV, VITE_BACK_URL_DEV, VITE_BACK_URL_PROD } = import.meta.env;
+import baseQueryWithReauth from 'services/baseQuery';
 
 export const tasksApi = createApi({
+  baseQuery: baseQueryWithReauth,
   reducerPath: 'tasks',
-  baseQuery: fetchBaseQuery({
-    baseUrl: DEV ? `${VITE_BACK_URL_DEV}/api` : `${VITE_BACK_URL_PROD}/api`,
-    prepareHeaders: (headers, { getState }) => {
-      const token = getState().user.token;
-      if (token) {
-        headers.set('authorization', `Bearer ${token}`);
-      }
-    }
-  }),
   tagTypes: ['tasks'],
   endpoints: (builder) => ({
     getTasks: builder.query({

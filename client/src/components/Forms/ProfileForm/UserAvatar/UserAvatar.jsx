@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import Avatar from '@mui/material/Avatar';
 import { useUser } from 'store/selectors';
 import { Plus } from 'components/shared/Icons';
-
-import { SUPPORTED_FORMATS } from '../accountValidationRules';
+import { SUPPORTED_FORMATS } from 'components/Forms/ProfileForm/accountValidationRules';
 
 import { AvatarAddIcon, AvatarContainer, AvatarInputField, AvatarImg } from './UserAvatar.styled';
 

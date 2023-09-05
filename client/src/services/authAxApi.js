@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import { store } from 'store/store';
-import { authenticate } from 'store/auth/authOps';
+import { authenticate, logOut } from 'store/auth/authOps';
 
 const { DEV, VITE_BACK_URL_DEV, VITE_BACK_URL_PROD } = import.meta.env;
 
@@ -33,6 +33,7 @@ instance.interceptors.response.use(
 
         return instance(error.config);
       } catch (error) {
+        store.dispatch(logOut());
         return Promise.reject(error);
       }
     }

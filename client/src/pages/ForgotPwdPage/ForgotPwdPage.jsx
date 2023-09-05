@@ -1,5 +1,4 @@
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { forgot } from 'store/auth/authOps';
 import { useisLoading } from 'store/selectors';
 import ForgotPwdForm from 'components/Forms/AuthForms/ForgotPwdForm/ForgotPwdForm';
