@@ -16,7 +16,7 @@ export const FormLabelSpan = styled.span`
 `;
 
 export const InputField = styled(Field)`
-  width: calc(100vw -20px * 2 - 18px * 2);
+  width: calc(100vw - 20px * 2 - 18px * 2);
   display: flex;
 
   height: 36px;
