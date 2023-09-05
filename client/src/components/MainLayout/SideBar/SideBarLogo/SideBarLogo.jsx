@@ -28,7 +28,7 @@ export default function SideBarLogo() {
         type="image/png"
       />
       <LogoText>
-        G<i style={{ marginLeft: '-2.5px', paddingRight: '2px', letterSpacing: '-0.03em' }}>oo</i>
+        G<i style={{ marginLeft: '-2px', paddingRight: '1px', letterSpacing: '-0.03em' }}>oo</i>
         seTrack
       </LogoText>
     </LogoDiv>
