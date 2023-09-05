@@ -11,10 +11,12 @@ export const FormWrap = styled.div`
 export const UserNameTitle = styled.h3`
   margin: 0;
   margin-bottom: 10px;
+  font-size: 18px;
   color: ${({ theme }) => theme.colors.textCancelBtn};
 
   @media screen and (${themes.breakpoints.m} <= width) {
     margin-bottom: 20px;
+    font-size: 20px;
   }
 `;
 

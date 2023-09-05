@@ -9,6 +9,7 @@ export const FlagBtn = styled.button`
   transition-property: transform;
   transition-duration: ${themes.animations.duration};
   transition-timing-function: ${themes.animations.cubicBezier};
+  height: 28px;
 
   &:hover,
   &:focus {
