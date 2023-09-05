@@ -15,7 +15,7 @@ export const UserNameTitle = styled.h3`
   color: ${({ theme }) => theme.colors.textCancelBtn};
 
   @media screen and (${themes.breakpoints.m} <= width) {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 20px;
   }
 `;
@@ -23,7 +23,7 @@ export const UserNameTitle = styled.h3`
 export const FormInputContainer = styled.div`
   display: flex;
   flex-direction: column;
-
+  margin-top: 10px;
   width: 100%;
 
   @media screen and (${themes.breakpoints.l} <= width) {

@@ -10,14 +10,14 @@ export const Label = styled.label`
 
 export const FormLabelSpan = styled.span`
   display: block;
-  margin-bottom: 8px;
-  margin-top: 16px;
+  margin-bottom: 5px;
   color: ${({ theme }) => theme.colors.placeholder};
 `;
 
 export const InputField = styled(Field)`
-  width: calc(100vw -20px * 2 - 18px * 2);
+  width: calc(100vw - 20px * 2 - 18px * 2);
   display: flex;
+  justify-content: flex-start;
 
   height: 36px;
   font-size: 14px;
