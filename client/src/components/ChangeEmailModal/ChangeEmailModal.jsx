@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useError, useisLoading } from 'store/selectors';
-
 import Modal from 'components/shared/Modal/Modal';
-
 import ChangeEmailForm from 'components/Forms/ProfileForm/ChangeEmailForm/ChangeEmailForm';
 import ChangeEmailVerifyForm from 'components/Forms/ProfileForm/ChangeEmailVerifyForm/ChangeEmailVerifyForm';
 

@@ -22,7 +22,7 @@ const Layout = () => {
   const [open, setOpen] = useState(false);
   const [, setOpenModal] = useState(false);
   const isRefreshing = useisRefreshing();
-  const token = useToken;
+  const token = useToken();
   const dispatch = useDispatch();
   const toggleModal = (openModal) => setOpenModal(!openModal);
   const callBack = () => setOpen(true);
